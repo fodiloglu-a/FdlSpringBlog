@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="" />
+    <list default="true" id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="ds" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +18,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="S1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -30,6 +38,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2OhGhH9bFlWwieN1pqhdeixxGcs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,7 +55,7 @@
     "last_opened_file_path": "/home/enoca/Desktop/FdlSpringBlog",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "project.propCompiler",
-    "spring.configuration.checksum": "9c50ee5129a366e190ed665d01cbe3c1"
+    "spring.configuration.checksum": "fa50f131b5e86a3b26807733f5f11b9b"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -68,7 +77,14 @@
       <recent name="com.busTic.busTicket.Facades.BusDTO" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BusTicketApplication">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.FdlSpringBlog">
     <configuration name="testClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.busTic.busTicket.testClass" />
       <module name="busTicket" />
@@ -128,9 +144,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Docker.resources: Compose Deployment" />
-        <item itemvalue="Docker.resources/aplication.yml.mongodb: Compose Deployment" />
         <item itemvalue="Docker.resources/aplication.yml: Compose Deployment" />
+        <item itemvalue="Docker.resources/aplication.yml.mongodb: Compose Deployment" />
         <item itemvalue="Application.testClass" />
+        <item itemvalue="Docker.resources: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -148,11 +165,49 @@
       <workItem from="1682254028224" duration="2803000" />
       <workItem from="1682289719377" duration="24000" />
       <workItem from="1682290154742" duration="12000" />
+      <workItem from="1682290275115" duration="2502000" />
     </task>
+    <task id="LOCAL-00001" summary="ds">
+      <created>1682292170348</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682292170348</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ds">
+      <created>1682292359607</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682292359607</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ds">
+      <created>1682292464753</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682292464753</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ds" />
+    <option name="LAST_COMMIT_MESSAGE" value="ds" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
