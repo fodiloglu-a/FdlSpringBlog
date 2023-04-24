@@ -1,0 +1,19 @@
+{
+  "args": {},
+  "data": "{\n  \"token\": \"my-secret-token\"\n}",
+  "files": {},
+  "form": {},
+  "headers": {
+    "Accept-Encoding": "gzip,deflate",
+    "Content-Length": "32",
+    "Content-Type": "application/json",
+    "Host": "httpbin.org",
+    "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.5)",
+    "X-Amzn-Trace-Id": "Root=1-64485074-273eb79b35b07e9810270855"
+  },
+  "json": {
+    "token": "my-secret-token"
+  },
+  "origin": "176.220.214.36",
+  "url": "https://httpbin.org/post"
+}

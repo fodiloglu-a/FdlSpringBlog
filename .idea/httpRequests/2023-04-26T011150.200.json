@@ -1,0 +1,17 @@
+{
+  "args": {},
+  "data": "{\n  \"id\": d5c014a0-82f3-44e2-8774-92c754c8b893,\n  \"price\": 548,\n  \"ts\": 1682460709,\n  \"value\": \"content\"\n}",
+  "files": {},
+  "form": {},
+  "headers": {
+    "Accept-Encoding": "gzip,deflate",
+    "Content-Length": "106",
+    "Content-Type": "application/json",
+    "Host": "httpbin.org",
+    "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.5)",
+    "X-Amzn-Trace-Id": "Root=1-64485026-57ee946b08a28f4e26b8bbc4"
+  },
+  "json": null,
+  "origin": "176.220.214.36",
+  "url": "https://httpbin.org/post"
+}

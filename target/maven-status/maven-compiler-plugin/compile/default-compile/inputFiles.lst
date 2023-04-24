@@ -1,0 +1,13 @@
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Repository/BlogDao.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/TestController.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Model/BlogModel.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/CoreBeans/ModelMapperBeans.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/FdlSpringBlog.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/BlogApi.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java

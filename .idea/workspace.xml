@@ -5,45 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="FdlSpringBlog web application developer commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/CoreBeans/ModelMapperBeans.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Repository/BlogDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/FdlSpringBlog_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/consolestorage/flexible_search_region.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/consolestorage/solr_region.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_jasper_10_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_10_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_33_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/test.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/FdlSpringBlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FdlSpringBlog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_5_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_inject_jakarta_inject_api_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_10_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_angus_angus_activation_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_core_4_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_4_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_4_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_6_0_6_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_orm_hibernate_core_6_1_7_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_4_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_3_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_3_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_3_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_3_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_6_0_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_6_0_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_6_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/BlogModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/BlogModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/aplication.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/aplication.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aplication.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aplication.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Model/BlogModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Model/BlogModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/aplication.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aplication.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Controller/BlogApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Controller/BlogApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServicesImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServicesImp.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +38,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -65,6 +49,14 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/ws-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/graphql-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-tests.http" environment="test" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,13 +70,16 @@
     </option>
   </component>
   <component name="ProjectId" id="2OhGhH9bFlWwieN1pqhdeixxGcs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -93,8 +88,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/enoca/Desktop/FdlSpringBlog",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/home/enoca/Desktop/FdlSpringBlog/src/main/webapp",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.30804598",
+    "rest.client.default.execution.environment": "test",
     "settings.editor.selected.configurable": "project.propCompiler",
     "spring.configuration.checksum": "fa50f131b5e86a3b26807733f5f11b9b"
   },
@@ -112,6 +112,12 @@
       <recent name="com.busTic.busTicket.Services.CompanyServices" />
       <recent name="com.busTic.busTicket.Model.BusModel" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.busTic.busTicket.Repository.BusDao" />
       <recent name="com.busTic.busTicket.Facades.BusDTO.HalfBus" />
@@ -125,27 +131,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.FdlSpringBlog">
-    <configuration name="testClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.busTic.busTicket.testClass" />
-      <module name="busTicket" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.busTic.busTicket.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BusTicketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="busTicket" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.busTic.busTicket.BusTicketApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="FdlSpringBlog" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="FdlSpringBlog" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.fdlSpring.FdlSpringBlog" />
@@ -153,44 +139,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="resources: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="src/main/resources/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="resources/aplication.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="src/main/resources/aplication.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="resources/aplication.yml.mongodb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="mongodb" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="src/main/resources/aplication.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Docker.resources: Compose Deployment" />
-        <item itemvalue="Docker.resources/aplication.yml: Compose Deployment" />
-        <item itemvalue="Docker.resources/aplication.yml.mongodb: Compose Deployment" />
-        <item itemvalue="Application.testClass" />
-        <item itemvalue="Docker.resources: Compose Deployment" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -249,6 +197,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="application.properties" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -261,6 +212,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="ds" />
     <MESSAGE value="FdlSpringBlog web application developer commit" />
     <option name="LAST_COMMIT_MESSAGE" value="FdlSpringBlog web application developer commit" />
@@ -290,5 +242,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FdlSpringBlog$FdlSpringBlog.ic" NAME="FdlSpringBlog Coverage Results" MODIFIED="1682459011089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
