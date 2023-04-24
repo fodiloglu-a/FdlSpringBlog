@@ -4,7 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="ds" />
+    <list default="true" id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="FdlSpringBlog web application developer commit">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/CoreBeans/ModelMapperBeans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Repository/BlogDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/FdlSpringBlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FdlSpringBlog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_4_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_5_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_inject_jakarta_inject_api_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_10_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_angus_angus_activation_2_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_core_4_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_4_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_4_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_6_0_6_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_orm_hibernate_core_6_1_7_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_4_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_3_0_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_6_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_6_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_6_0_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/BlogModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/BlogModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/aplication.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/aplication.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aplication.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aplication.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Model/BlogModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Model/BlogModel.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +91,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/home/enoca/Desktop/FdlSpringBlog",
     "nodejs_package_manager_path": "npm",
@@ -165,7 +206,7 @@
       <workItem from="1682254028224" duration="2803000" />
       <workItem from="1682289719377" duration="24000" />
       <workItem from="1682290154742" duration="12000" />
-      <workItem from="1682290275115" duration="2502000" />
+      <workItem from="1682290275115" duration="6885000" />
     </task>
     <task id="LOCAL-00001" summary="ds">
       <created>1682292170348</created>
@@ -188,7 +229,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682292464753</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="FdlSpringBlog web application developer commit">
+      <created>1682293208002</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682293208002</updated>
+    </task>
+    <task id="LOCAL-00005" summary="FdlSpringBlog web application developer commit">
+      <created>1682293223131</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682293223131</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +262,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ds" />
-    <option name="LAST_COMMIT_MESSAGE" value="ds" />
+    <MESSAGE value="FdlSpringBlog web application developer commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="FdlSpringBlog web application developer commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -226,6 +282,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/busTic/busTicket/Services/BusServices/BusServicesImp.java</url>
           <line>48</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
