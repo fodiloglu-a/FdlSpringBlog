@@ -8,6 +8,9 @@ import com.fdlSpring.Services.BlogManager.BlogServicesImp;
 import jakarta.annotation.Resource;
 import org.modelmapper.ModelMapper;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BlogFacadesImp implements BlogsFacadesInt {
 
     @Resource
@@ -30,5 +33,16 @@ public class BlogFacadesImp implements BlogsFacadesInt {
     @Override
     public BlogResponse getBlogByTitle(String title) {
         return this.modelMapper.map(this.blogServicesImp.getBlogByTitle(title),BlogResponse.class);
+    }
+
+    @Override
+    public List<BlogResponse> getBlogs() {
+        List<BlogResponse> blogResponses=new ArrayList<>();
+        List<BlogModel> blogs=this.blogServicesImp.getBlogs();
+        for (BlogModel blog : blogs) {
+            blogResponses.add(this.modelMapper.map(blog, BlogResponse.class));
+
+        }
+        return blogResponses;
     }
 }
