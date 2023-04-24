@@ -5,6 +5,8 @@ import com.fdlSpring.Repository.BlogDao;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class BlogServicesImp implements BlogServices{
 
@@ -26,5 +28,11 @@ public class BlogServicesImp implements BlogServices{
     @Override
     public BlogModel getBlogByTitle(String title) {
         return this.blogDao.getBlogModelByBlogTitleEquals(title);
+    }
+
+    @Override
+    public List<BlogModel> getBlogs() {
+
+        return this.blogDao.findAll();
     }
 }

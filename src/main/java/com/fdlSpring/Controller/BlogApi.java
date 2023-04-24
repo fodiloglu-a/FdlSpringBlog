@@ -6,6 +6,8 @@ import com.fdlSpring.Facades.FacadesMapping.Implament.BlogFacadesImp;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/blog")
 public class BlogApi {
@@ -30,6 +32,11 @@ public class BlogApi {
     @GetMapping("/getBlogByTitle")
     public BlogResponse getBlogByTitle(@RequestParam String title){
         return this.blogFacadesImp.getBlogByTitle(title);
+    }
+
+    @GetMapping("/getBlogs")
+    public List<BlogResponse> getBlogs(){
+        return this.blogFacadesImp.getBlogs();
     }
 
 
