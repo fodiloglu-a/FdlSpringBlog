@@ -45,4 +45,47 @@ public class BlogFacadesImp implements BlogsFacadesInt {
         }
         return blogResponses;
     }
+
+    @Override
+    public List<BlogResponse> getBlogsByCategory(String category) {
+        List<BlogResponse> blogResponses=new ArrayList<>();
+        List<BlogModel> responses=this.blogServicesImp.getBlogsByCategory(category);
+        for (BlogModel respons : responses) {
+            blogResponses.add(this.modelMapper.map(respons,BlogResponse.class));
+
+        }
+        return blogResponses;
+    }
+
+    @Override
+    public List<BlogResponse> getBlogsByBloggerId(String id) {
+
+        List<BlogResponse> blogResponses=new ArrayList<>();
+        List<BlogModel> responses=this.blogServicesImp.getBlogsByBloggerId(id);
+        for (BlogModel respons : responses) {
+            blogResponses.add(this.modelMapper.map(respons,BlogResponse.class));
+
+        }
+        return blogResponses;
+
+    }
+
+    @Override
+    public String updateBlog(BlogRequest blogRequest) {
+        BlogModel blogModel=this.blogServicesImp.getBlogById(blogRequest.getBlogId());
+        if (!blogModel.getBlogId().equals(blogRequest.getBlogId())){
+            this.blogServicesImp.deleteBlogById(blogModel.getBlogId());
+            blogModel.setBlogId(blogRequest.getBlogId());
+        }
+
+        blogModel.setBlogFile(blogRequest.getBlogFile());
+        blogModel.setBlogFileId(blogRequest.getBlogFileId());
+        blogModel.setBlogLogo(blogRequest.getBlogLogo());
+        blogModel.setBlogLogoId(blogRequest.getBlogLogoId());
+        blogModel.setBlogTitle(blogRequest.getBlogTitle());
+        blogModel.setBlogFileSummary(blogRequest.getBlogFileSummary());
+        blogModel.setBloggerId(blogRequest.getBloggerId());
+        blogModel.setBlogLogoUrl(blogRequest.getBlogLogoUrl());
+        return this.blogServicesImp.updateBlog(blogModel);
+    }
 }

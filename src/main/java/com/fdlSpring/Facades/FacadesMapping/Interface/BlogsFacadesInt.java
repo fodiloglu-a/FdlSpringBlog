@@ -14,4 +14,10 @@ public interface BlogsFacadesInt {
     BlogResponse getBlogByTitle(String title);
 
     List<BlogResponse> getBlogs();
+
+    List<BlogResponse> getBlogsByCategory(String category);
+
+    List<BlogResponse> getBlogsByBloggerId(String id);
+
+    String updateBlog(BlogRequest blogeId);
 }

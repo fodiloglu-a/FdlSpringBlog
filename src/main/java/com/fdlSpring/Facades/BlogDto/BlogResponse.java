@@ -7,6 +7,12 @@ public class BlogResponse {
 
     private  String  blogId;
     private  String  blogTitle;
-    private  String  blogText;
-    private  String  blogComment;
+    private  String  blogCategory;
+    private  String  blogger;
+    private  byte[]  blogFile;
+    private  String  blogFileId;
+    private  String  blogFileSummary;
+    private  byte[]  blogImage;
+    private  byte[]  blogImageUrl;
+    private  byte[]  blogImageId;
 }
