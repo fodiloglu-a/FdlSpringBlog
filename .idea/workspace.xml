@@ -4,46 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="FdlSpringBlog web application developer commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/CoreBeans/ModelMapperBeans.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Repository/BlogDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FdlSpringBlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FdlSpringBlog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_4_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_5_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_inject_jakarta_inject_api_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_10_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_angus_angus_activation_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_core_4_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_4_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_4_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_6_0_6_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_orm_hibernate_core_6_1_7_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_4_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_3_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_3_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_3_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_3_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_6_0_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_6_0_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_6_0_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/BlogModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/BlogModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/aplication.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/aplication.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aplication.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aplication.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Model/BlogModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Model/BlogModel.class" afterDir="false" />
+    <list default="true" id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="FdlSpringBlog web application fdlBlog-Dev commit">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,12 +21,25 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Abdulmutalip &lt;109350249+fodiloglu-a@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="S1" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/ws-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/graphql-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-tests.http" environment="test" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,32 +53,34 @@
     </option>
   </component>
   <component name="ProjectId" id="2OhGhH9bFlWwieN1pqhdeixxGcs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/enoca/Desktop/FdlSpringBlog",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propCompiler",
-    "spring.configuration.checksum": "fa50f131b5e86a3b26807733f5f11b9b"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/enoca/Desktop/FdlSpringBlog&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;fa50f131b5e86a3b26807733f5f11b9b&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mongo"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
@@ -193,6 +170,12 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="showFilesets" value="false" />
+    <option name="showInfrastructureBeans" value="false" />
+    <option name="showDoc" value="false" />
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="" />
@@ -243,7 +226,28 @@
       <option name="project" value="LOCAL" />
       <updated>1682293223131</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge pull request #1 from fodiloglu-a/Fdl-BlogDev&#10;&#10;FdlSpringBlog web application fdlBlog-Dev commit">
+      <created>1682461538419</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682461538419</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Merge pull request #1 from fodiloglu-a/Fdl-BlogDev&#10;&#10;FdlSpringBlog web application fdlBlog-Dev commit">
+      <created>1682461789458</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682461789458</updated>
+    </task>
+    <task id="LOCAL-00008" summary="FdlSpringBlog web application fdlBlog-Dev commit">
+      <created>1682462149197</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682462149197</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +267,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ds" />
     <MESSAGE value="FdlSpringBlog web application developer commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="FdlSpringBlog web application developer commit" />
+    <MESSAGE value="Merge pull request #1 from fodiloglu-a/Fdl-BlogDev&#10;&#10;FdlSpringBlog web application fdlBlog-Dev commit" />
+    <MESSAGE value="FdlSpringBlog web application fdlBlog-Dev commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="FdlSpringBlog web application fdlBlog-Dev commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -283,12 +289,10 @@
           <line>48</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FdlSpringBlog$FdlSpringBlog.ic" NAME="FdlSpringBlog Coverage Results" MODIFIED="1682459011089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
