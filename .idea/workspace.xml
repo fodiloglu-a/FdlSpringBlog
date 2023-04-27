@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="FdlSpringBlog web application fdlBlog-Dev commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/CategoryDTO/CategoryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/CategoryDTO/CategoryResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/CategoryFacadesImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/CategoryFacadesInt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/CategoryModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Repository/CategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServicesImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogsPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/NewsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/NewsPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/BlogModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/BlogModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Repository/BlogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Repository/BlogDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Controller/BlogApi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/BlogDto/BlogRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/BlogDto/BlogRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/BlogDto/BlogResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/BlogDto/BlogResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Model/BlogModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Model/BlogModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Repository/BlogDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Repository/BlogDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServices.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServicesImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServicesImp.class" afterDir="false" />
-    </list>
+    <list default="true" id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="FdlSpringBlog web application fdlBlog-Dev commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,27 +60,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/enoca/Desktop/FdlSpringBlog",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propCompiler",
-    "spring.configuration.checksum": "fa50f131b5e86a3b26807733f5f11b9b"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/enoca/Desktop/FdlSpringBlog&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;fa50f131b5e86a3b26807733f5f11b9b&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mongo"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
@@ -208,7 +175,7 @@
       <workItem from="1682290154742" duration="12000" />
       <workItem from="1682290275115" duration="6885000" />
       <workItem from="1682488823972" duration="285000" />
-      <workItem from="1682499009122" duration="18312000" />
+      <workItem from="1682499009122" duration="18721000" />
     </task>
     <task id="LOCAL-00001" summary="ds">
       <created>1682292170348</created>
@@ -273,7 +240,28 @@
       <option name="project" value="LOCAL" />
       <updated>1682462485224</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="FdlSpringBlog web application fdlBlog-Dev commit">
+      <created>1682579378615</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1682579378616</updated>
+    </task>
+    <task id="LOCAL-00011" summary="FdlSpringBlog web application fdlBlog-Dev commit">
+      <created>1682579582396</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1682579582396</updated>
+    </task>
+    <task id="LOCAL-00012" summary="FdlSpringBlog web application fdlBlog-Dev commit">
+      <created>1682579589087</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682579589087</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,18 +314,8 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogsPageController.java</url>
-          <line>20</line>
+          <line>65</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
