@@ -1,18 +1,11 @@
-package com.fdlSpring.Model;
+package com.fdlSpring.Facades.AdminDTO;
 
 import lombok.Data;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
-@Document
-public class AdminModel {
-
+public class AdminResponse {
     private String adminId;
     private String adminName;
     private String adminEmail;
     private String adminUserName;
-
-
-
-
 }
