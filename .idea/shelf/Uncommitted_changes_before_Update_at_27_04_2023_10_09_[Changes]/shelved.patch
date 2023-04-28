@@ -1,0 +1,1142 @@
+Index: src/main/java/com/fdlSpring/Controller/BlogApi.java
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Controller/BlogApi.java b/src/main/java/com/fdlSpring/Controller/BlogApi.java
+deleted file mode 100644
+--- a/src/main/java/com/fdlSpring/Controller/BlogApi.java	(revision a518c358cde55fa161c07d891b11226cd5429d3a)
++++ /dev/null	(revision a518c358cde55fa161c07d891b11226cd5429d3a)
+@@ -1,50 +0,0 @@
+-package com.fdlSpring.Controller;
+-
+-import com.fdlSpring.Facades.BlogDto.BlogRequest;
+-import com.fdlSpring.Facades.BlogDto.BlogResponse;
+-import com.fdlSpring.Facades.FacadesMapping.Implament.BlogFacadesImp;
+-import jakarta.annotation.Resource;
+-import org.springframework.web.bind.annotation.*;
+-
+-@RestController
+-@RequestMapping("/blog")
+-public class BlogApi {
+-
+-    @Resource
+-    private BlogFacadesImp blogFacadesImp;
+-
+-
+-    @PostMapping("/creatBlog")
+-    public String creatBlog(@RequestBody BlogRequest blogRequest){
+-        return this.blogFacadesImp.createBlog(blogRequest);
+-
+-    }
+-
+-    @GetMapping("/getBlogById")
+-    public BlogResponse getBlogById(@RequestParam String id){
+-        return this.blogFacadesImp.getBlogById(id);
+-
+-
+-    }
+-
+-    @GetMapping("/getBlogByTitle")
+-    public BlogResponse getBlogByTitle(@RequestParam String title){
+-        return this.blogFacadesImp.getBlogByTitle(title);
+-    }
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-}
+Index: src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/CategoryFacadesInt.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/CategoryFacadesInt.java b/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/CategoryFacadesInt.java
+new file mode 100644
+--- /dev/null	(date 1682517104567)
++++ b/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/CategoryFacadesInt.java	(date 1682517104567)
+@@ -0,0 +1,16 @@
++package com.fdlSpring.Facades.FacadesMapping.Interface;
++
++import com.fdlSpring.Facades.CategoryDTO.CategoryRequest;
++import com.fdlSpring.Facades.CategoryDTO.CategoryResponse;
++
++import java.util.List;
++
++public interface CategoryFacadesInt {
++    String createCategory(CategoryRequest categoryRequest);
++
++    String update(CategoryRequest categoryRequest, String updateId);
++
++    List<CategoryResponse> getCategory();
++
++    CategoryResponse getCategoryById(String categoryId);
++}
+Index: src/main/java/com/fdlSpring/Facades/CategoryDTO/CategoryRequest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Facades/CategoryDTO/CategoryRequest.java b/src/main/java/com/fdlSpring/Facades/CategoryDTO/CategoryRequest.java
+new file mode 100644
+--- /dev/null	(date 1682516549580)
++++ b/src/main/java/com/fdlSpring/Facades/CategoryDTO/CategoryRequest.java	(date 1682516549580)
+@@ -0,0 +1,14 @@
++package com.fdlSpring.Facades.CategoryDTO;
++
++import com.fdlSpring.Model.BlogModel;
++
++import lombok.Data;
++
++import java.util.List;
++
++@Data
++public class CategoryRequest {
++    private String categoryId;
++    private String categoryName;
++    private List<BlogModel> blogModels;
++}
+Index: src/main/java/com/fdlSpring/Controller/BlogsPageController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.fdlSpring.Controller;\n\npublic class BlogsPageController {\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Controller/BlogsPageController.java b/src/main/java/com/fdlSpring/Controller/BlogsPageController.java
+--- a/src/main/java/com/fdlSpring/Controller/BlogsPageController.java	(revision a518c358cde55fa161c07d891b11226cd5429d3a)
++++ b/src/main/java/com/fdlSpring/Controller/BlogsPageController.java	(date 1682505415437)
+@@ -1,4 +1,66 @@
+ package com.fdlSpring.Controller;
+ 
++import com.fdlSpring.Facades.BlogDto.BlogRequest;
++import com.fdlSpring.Facades.BlogDto.BlogResponse;
++import com.fdlSpring.Facades.FacadesMapping.Implament.BlogFacadesImp;
++import jakarta.annotation.Resource;
++import org.springframework.web.bind.annotation.*;
++
++import java.util.List;
++
++@RestController
++@RequestMapping("/blog")
+ public class BlogsPageController {
++
++    @Resource
++    private BlogFacadesImp blogFacadesImp;
++
++
++    @PostMapping("/creatBlog")
++    public String creatBlog(@RequestBody BlogRequest blogRequest){
++        return this.blogFacadesImp.createBlog(blogRequest);
++
++    }
++    @PutMapping("/updateBlog")
++    public  String updateBlog(@RequestBody  BlogRequest blogRequest){
++        return this.blogFacadesImp.updateBlog(blogRequest);
++    }
++
++    @GetMapping("/getBlogById")
++    public BlogResponse getBlogById(@RequestParam String id){
++        return this.blogFacadesImp.getBlogById(id);
++
++
++    }
++
++    @GetMapping("/getBlogByTitle")
++    public BlogResponse getBlogByTitle(@RequestParam String title){
++        return this.blogFacadesImp.getBlogByTitle(title);
++    }
++
++    @GetMapping("/getBlogsByCategory")
++    public List<BlogResponse> getBlogsByCategory(@RequestParam String category){
++        return this.blogFacadesImp.getBlogsByCategory(category);
++    }
++
++    @GetMapping("/getBlogsByBloggerId")
++    public List<BlogResponse> getBlogsByBloggerId(String id){
++        return this.blogFacadesImp.getBlogsByBloggerId(id);
++    }
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
+ }
+Index: src/main/java/com/fdlSpring/Facades/CategoryDTO/CategoryResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Facades/CategoryDTO/CategoryResponse.java b/src/main/java/com/fdlSpring/Facades/CategoryDTO/CategoryResponse.java
+new file mode 100644
+--- /dev/null	(date 1682516549588)
++++ b/src/main/java/com/fdlSpring/Facades/CategoryDTO/CategoryResponse.java	(date 1682516549588)
+@@ -0,0 +1,13 @@
++package com.fdlSpring.Facades.CategoryDTO;
++
++import com.fdlSpring.Model.BlogModel;
++import lombok.Data;
++
++import java.util.List;
++
++@Data
++public class CategoryResponse {
++    private String categoryId;
++    private String categoryName;
++    private List<BlogModel> blogModels;
++}
+Index: src/main/java/com/fdlSpring/Controller/CategoryController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Controller/CategoryController.java b/src/main/java/com/fdlSpring/Controller/CategoryController.java
+new file mode 100644
+--- /dev/null	(date 1682517514552)
++++ b/src/main/java/com/fdlSpring/Controller/CategoryController.java	(date 1682517514552)
+@@ -0,0 +1,38 @@
++package com.fdlSpring.Controller;
++
++
++import com.fdlSpring.Facades.CategoryDTO.CategoryRequest;
++import com.fdlSpring.Facades.CategoryDTO.CategoryResponse;
++import com.fdlSpring.Facades.FacadesMapping.Implament.CategoryFacadesImp;
++import jakarta.annotation.Resource;
++import org.springframework.stereotype.Controller;
++import org.springframework.web.bind.annotation.*;
++
++import java.util.List;
++
++@RestController
++@RequestMapping("/category")
++public class CategoryController {
++    @Resource
++    CategoryFacadesImp categoryFacadesImp;
++
++    @PostMapping("/create")
++    public String createCategory(@RequestBody CategoryRequest categoryRequest){
++        return this.categoryFacadesImp.createCategory(categoryRequest);
++    }
++    @PutMapping("/update")
++    public String update(@RequestBody CategoryRequest categoryRequest,@RequestParam String updateId){
++        return this.categoryFacadesImp.update(categoryRequest,updateId);
++    }
++
++
++    @GetMapping("/getCategory")
++    public List<CategoryResponse> getCategory(){
++        return this.categoryFacadesImp.getCategory();
++    }
++
++    @GetMapping("/getCategoryById")
++    public CategoryResponse getCategoryById(@RequestParam String categoryId){
++       return  this.categoryFacadesImp.getCategoryById(categoryId);
++    }
++}
+Index: src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/CategoryFacadesImp.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/CategoryFacadesImp.java b/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/CategoryFacadesImp.java
+new file mode 100644
+--- /dev/null	(date 1682518741731)
++++ b/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/CategoryFacadesImp.java	(date 1682518741731)
+@@ -0,0 +1,71 @@
++package com.fdlSpring.Facades.FacadesMapping.Implament;
++
++import com.fdlSpring.Facades.CategoryDTO.CategoryRequest;
++import com.fdlSpring.Facades.CategoryDTO.CategoryResponse;
++import com.fdlSpring.Facades.FacadesMapping.Interface.CategoryFacadesInt;
++import com.fdlSpring.Model.CategoryModel;
++import com.fdlSpring.Services.CategoryManager.CategoryServicesImp;
++import jakarta.annotation.Resource;
++import org.modelmapper.ModelMapper;
++
++import java.util.ArrayList;
++import java.util.List;
++
++public class CategoryFacadesImp implements CategoryFacadesInt {
++
++    @Resource
++    private CategoryServicesImp categoryServicesImp;
++    @Resource
++    private ModelMapper modelMapper;
++    @Override
++    public String createCategory(CategoryRequest categoryRequest) {
++        if (categoryRequest.getCategoryId().isEmpty() || categoryRequest.getCategoryName().isEmpty()){
++            return "not Successful";
++
++        }
++
++
++        return this.categoryServicesImp.createCategory(this.modelMapper.map(categoryRequest, CategoryModel.class));
++    }
++
++    @Override
++    public String update(CategoryRequest categoryRequest, String updateId) {
++        CategoryModel categoryModel=this.categoryServicesImp.getCategoryById(updateId);
++        if(categoryModel.getCategoryId().isEmpty())
++        {
++            return "Not Successful";
++        }
++        categoryModel.setCategoryName(categoryRequest.getCategoryName());
++        if (categoryModel.getBlogModels().isEmpty()){
++            categoryModel.setBlogModels(categoryRequest.getBlogModels());
++        }else {
++           if ( categoryModel.getBlogModels().size()==categoryRequest.getBlogModels().size()){
++               categoryModel.setBlogModels(categoryRequest.getBlogModels());
++           }
++
++        }
++
++
++
++        return this.categoryServicesImp.update(categoryModel);
++    }
++
++    @Override
++    public List<CategoryResponse> getCategory() {
++        List<CategoryResponse>categoryResponses=new ArrayList<>();
++        List<CategoryModel> categoryModels=categoryServicesImp.getCategory();
++        for (CategoryModel categoryModel : categoryModels) {
++            categoryResponses.add(this.modelMapper.map(categoryModel,CategoryResponse.class));
++
++        }
++        return categoryResponses ;
++    }
++
++    @Override
++    public CategoryResponse getCategoryById(String categoryId) {
++        CategoryModel model = this.categoryServicesImp.getCategoryById(categoryId);
++        CategoryResponse response=this.modelMapper.map(model,CategoryResponse.class);
++
++        return response;
++    }
++}
+Index: src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.fdlSpring.Services.BlogManager;\n\nimport com.fdlSpring.Model.BlogModel;\nimport com.fdlSpring.Repository.BlogDao;\nimport jakarta.annotation.Resource;\nimport org.springframework.stereotype.Service;\n\nimport java.util.List;\n\n@Service\npublic class BlogServicesImp implements BlogServices{\n\n    @Resource\n    private BlogDao blogDao;\n\n    @Override\n    public String createBlog(BlogModel map) {\n        this.blogDao.save(map);\n        return null;\n    }\n\n    @Override\n    public BlogModel getBlogById(String id) {\n\n        return this.blogDao.findById(id).get();\n    }\n\n    @Override\n    public BlogModel getBlogByTitle(String title) {\n        return this.blogDao.getBlogModelByBlogTitleEquals(title);\n    }\n\n    @Override\n    public List<BlogModel> getBlogs() {\n\n        return this.blogDao.findAll();\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java b/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java
+--- a/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java	(revision a518c358cde55fa161c07d891b11226cd5429d3a)
++++ b/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java	(date 1682520886753)
+@@ -1,22 +1,41 @@
+ package com.fdlSpring.Services.BlogManager;
+ 
++import com.fdlSpring.Facades.BlogDto.BlogRequest;
+ import com.fdlSpring.Model.BlogModel;
++import com.fdlSpring.Model.CategoryModel;
+ import com.fdlSpring.Repository.BlogDao;
++import com.fdlSpring.Repository.CategoryDao;
+ import jakarta.annotation.Resource;
+ import org.springframework.stereotype.Service;
+ 
++import java.awt.font.TextHitInfo;
+ import java.util.List;
++import java.util.Optional;
+ 
+ @Service
+ public class BlogServicesImp implements BlogServices{
+ 
+     @Resource
+     private BlogDao blogDao;
++    @Resource
++    private CategoryDao categoryDao;
+ 
+     @Override
+-    public String createBlog(BlogModel map) {
+-        this.blogDao.save(map);
+-        return null;
++    public String createBlog(BlogModel model) {
++
++        try
++        {
++            CategoryModel categoryModel=categoryDao.findById(model.getCategoryId()).get();
++            if (!categoryModel.getCategoryId().isEmpty()){
++                model.setBlogCategoryModel(categoryModel);
++
++
++            }else {return "Category Id Not Be Null";}
++        }catch (Exception e){return e.getMessage();}
++
++
++
++        return "Success";
+     }
+ 
+     @Override
+@@ -35,4 +54,45 @@
+ 
+         return this.blogDao.findAll();
+     }
++
++    @Override
++    public List<BlogModel> getBlogsByCategory(String category) {
++        return this.blogDao.getBlogModelsByCategoryIdEquals(category);
++    }
++
++    @Override
++    public List<BlogModel> getBlogsByBloggerId(String id) {
++        return this.blogDao.getBlogModelsByBloggerIdEquals(id);
++    }
++
++    @Override
++    public String updateBlog(BlogModel blogModel) {
++
++
++        this.blogDao.save(blogModel);
++
++        return "null";
++    }
++
++    @Override
++    public String deleteBlogById(String id) {
++
++          try {
++              Optional<BlogModel> blogModel=this.blogDao.findById("id");
++              if (blogModel.isEmpty()){
++                  return "Model Not Fount";
++              }else {
++                  this.blogDao.deleteById(id);
++
++              }
++
++
++          }catch (Exception e){
++              e.getMessage();
++          }
++
++        return "deleteSuccessful";
++    }
++
++
+ }
+Index: src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.fdlSpring.Services.BlogManager;\n\nimport com.fdlSpring.Model.BlogModel;\n\nimport java.util.List;\n\npublic interface BlogServices {\n\n    String createBlog(BlogModel map);\n\n    Object getBlogById(String id);\n\n    Object getBlogByTitle(String title);\n\n    List<BlogModel> getBlogs();\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java b/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java
+--- a/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java	(revision a518c358cde55fa161c07d891b11226cd5429d3a)
++++ b/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java	(date 1682510827944)
+@@ -1,5 +1,6 @@
+ package com.fdlSpring.Services.BlogManager;
+ 
++import com.fdlSpring.Facades.BlogDto.BlogRequest;
+ import com.fdlSpring.Model.BlogModel;
+ 
+ import java.util.List;
+@@ -13,4 +14,11 @@
+     Object getBlogByTitle(String title);
+ 
+     List<BlogModel> getBlogs();
++
++    List<BlogModel> getBlogsByCategory(String category);
++
++    List<BlogModel> getBlogsByBloggerId(String id);
++
++    String updateBlog(BlogModel blogeId);
++    String deleteBlogById(String id);
+ }
+Index: src/main/java/com/fdlSpring/Model/BlogModel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.fdlSpring.Model;\n\nimport lombok.Data;\nimport org.springframework.data.annotation.Id;\nimport org.springframework.data.mongodb.core.mapping.Document;\n\n@Data\n@Document\npublic class BlogModel {\n\n\n\n    @Id\n    private  String  blogId;\n    private  String  blogTitle;\n    private  String  blogText;\n    private  String  blogComment;\n\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Model/BlogModel.java b/src/main/java/com/fdlSpring/Model/BlogModel.java
+--- a/src/main/java/com/fdlSpring/Model/BlogModel.java	(revision a518c358cde55fa161c07d891b11226cd5429d3a)
++++ b/src/main/java/com/fdlSpring/Model/BlogModel.java	(date 1682520886745)
+@@ -4,17 +4,26 @@
+ import org.springframework.data.annotation.Id;
+ import org.springframework.data.mongodb.core.mapping.Document;
+ 
++
++
+ @Data
+ @Document
+ public class BlogModel {
+ 
+ 
+-
+     @Id
+-    private  String  blogId;
+-    private  String  blogTitle;
+-    private  String  blogText;
+-    private  String  blogComment;
++    private String blogId;
++    private String blogTitle;
++    private String categoryId;
++
++    private CategoryModel blogCategoryModel;
++    private String bloggerId;
++    private byte[] blogFile;
++    private String blogFileId;
++    private String blogFileSummary;
++    private byte[] blogLogo;
++    private String blogLogoUrl;
++    private String blogLogoId;
+ 
+ 
+ }
+Index: src/main/java/com/fdlSpring/Repository/BlogDao.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.fdlSpring.Repository;\n\nimport com.fdlSpring.Model.BlogModel;\nimport org.springframework.data.mongodb.repository.MongoRepository;\nimport org.springframework.stereotype.Repository;\n\n@Repository\npublic interface BlogDao extends MongoRepository<BlogModel,String> {\n\n    BlogModel getBlogModelByBlogTitleEquals(String title);\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Repository/BlogDao.java b/src/main/java/com/fdlSpring/Repository/BlogDao.java
+--- a/src/main/java/com/fdlSpring/Repository/BlogDao.java	(revision a518c358cde55fa161c07d891b11226cd5429d3a)
++++ b/src/main/java/com/fdlSpring/Repository/BlogDao.java	(date 1682520736456)
+@@ -4,8 +4,19 @@
+ import org.springframework.data.mongodb.repository.MongoRepository;
+ import org.springframework.stereotype.Repository;
+ 
++import java.util.List;
++
+ @Repository
+ public interface BlogDao extends MongoRepository<BlogModel,String> {
+ 
++
++    List<BlogModel> getBlogModelsByCategoryIdEquals(String category);
++    List<BlogModel> getBlogModelsByBloggerIdEquals(String bloggerId);
++
+     BlogModel getBlogModelByBlogTitleEquals(String title);
++
++
++
++
++
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"5125350b-b842-4346-9cd2-0e7146dabc6e\" name=\"Changes\" comment=\"FdlSpringBlog web application fdlBlog-Dev commit\">\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Interface\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\n      <list>\n        <option value=\"Abdulmutalip &lt;109350249+fodiloglu-a@users.noreply.github.com&gt;\" />\n      </list>\n    </option>\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"HttpClientSelectedEnvironments\">\n    <file url=\"jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http\" environment=\"test\" />\n    <file url=\"jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http\" environment=\"test\" />\n    <file url=\"jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/ws-requests.http\" environment=\"test\" />\n    <file url=\"jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http\" environment=\"test\" />\n    <file url=\"jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/graphql-requests.http\" environment=\"test\" />\n    <file url=\"jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-tests.http\" environment=\"test\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"MavenImportPreferences\">\n    <option name=\"generalSettings\">\n      <MavenGeneralSettings>\n        <option name=\"mavenHome\" value=\"Use Maven wrapper\" />\n        <option name=\"useMavenConfig\" value=\"true\" />\n      </MavenGeneralSettings>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"2OhGhH9bFlWwieN1pqhdeixxGcs\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,\n    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,\n    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,\n    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/home/enoca/Desktop/FdlSpringBlog&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,\n    &quot;spring.configuration.checksum&quot;: &quot;fa50f131b5e86a3b26807733f5f11b9b&quot;\n  },\n  &quot;keyToStringList&quot;: {\n    &quot;DatabaseDriversLRU&quot;: [\n      &quot;mongo&quot;\n    ]\n  }\n}</component>\n  <component name=\"RebelAgentSelection\">\n    <selection>jr</selection>\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CreateClassDialog.RecentsKey\">\n      <recent name=\"com.busTic.busTicket.Services.CompanyServices\" />\n      <recent name=\"com.busTic.busTicket.Model.BusModel\" />\n    </key>\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\n      <recent name=\"com.busTic.busTicket.Repository.BusDao\" />\n      <recent name=\"com.busTic.busTicket.Facades.BusDTO.HalfBus\" />\n      <recent name=\"com.busTic.busTicket.Facades.BusDTO\" />\n    </key>\n  </component>\n  <component name=\"RunDashboard\">\n    <option name=\"configurationTypes\">\n      <set>\n        <option value=\"SpringBootApplicationConfigurationType\" />\n      </set>\n    </option>\n  </component>\n  <component name=\"RunManager\" selected=\"Spring Boot.FdlSpringBlog\">\n    <configuration name=\"testClass\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.busTic.busTicket.testClass\" />\n      <module name=\"busTicket\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.busTic.busTicket.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"BusTicketApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\n      <module name=\"busTicket\" />\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.busTic.busTicket.BusTicketApplication\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"FdlSpringBlog\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\n      <module name=\"FdlSpringBlog\" />\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.fdlSpring.FdlSpringBlog\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"resources: Compose Deployment\" type=\"docker-deploy\" factoryName=\"docker-compose.yml\" temporary=\"true\" server-name=\"Docker\">\n      <deployment type=\"docker-compose.yml\">\n        <settings>\n          <option name=\"sourceFilePath\" value=\"src/main/resources/docker-compose.yml\" />\n        </settings>\n      </deployment>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"resources/aplication.yml: Compose Deployment\" type=\"docker-deploy\" factoryName=\"docker-compose.yml\" temporary=\"true\" server-name=\"Docker\">\n      <deployment type=\"docker-compose.yml\">\n        <settings>\n          <option name=\"sourceFilePath\" value=\"src/main/resources/aplication.yml\" />\n        </settings>\n      </deployment>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"resources/aplication.yml.mongodb: Compose Deployment\" type=\"docker-deploy\" factoryName=\"docker-compose.yml\" temporary=\"true\" server-name=\"Docker\">\n      <deployment type=\"docker-compose.yml\">\n        <settings>\n          <option name=\"services\">\n            <list>\n              <option value=\"mongodb\" />\n            </list>\n          </option>\n          <option name=\"sourceFilePath\" value=\"src/main/resources/aplication.yml\" />\n        </settings>\n      </deployment>\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Docker.resources: Compose Deployment\" />\n        <item itemvalue=\"Docker.resources/aplication.yml: Compose Deployment\" />\n        <item itemvalue=\"Docker.resources/aplication.yml.mongodb: Compose Deployment\" />\n        <item itemvalue=\"Application.testClass\" />\n        <item itemvalue=\"Docker.resources: Compose Deployment\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"SpringBeansView\">\n    <option name=\"showFilesets\" value=\"false\" />\n    <option name=\"showInfrastructureBeans\" value=\"false\" />\n    <option name=\"showDoc\" value=\"false\" />\n    <option name=\"beanDetailsProportion\" value=\"0.3\" />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"5125350b-b842-4346-9cd2-0e7146dabc6e\" name=\"Changes\" comment=\"\" />\n      <created>1682005522452</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1682005522452</updated>\n      <workItem from=\"1682005523825\" duration=\"55586000\" />\n      <workItem from=\"1682205223834\" duration=\"1215000\" />\n      <workItem from=\"1682253609147\" duration=\"394000\" />\n      <workItem from=\"1682254028224\" duration=\"2803000\" />\n      <workItem from=\"1682289719377\" duration=\"24000\" />\n      <workItem from=\"1682290154742\" duration=\"12000\" />\n      <workItem from=\"1682290275115\" duration=\"6885000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"ds\">\n      <created>1682292170348</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1682292170348</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"ds\">\n      <created>1682292359607</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1682292359607</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"ds\">\n      <created>1682292464753</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1682292464753</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"FdlSpringBlog web application developer commit\">\n      <created>1682293208002</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1682293208002</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"FdlSpringBlog web application developer commit\">\n      <created>1682293223131</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1682293223131</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"Merge pull request #1 from fodiloglu-a/Fdl-BlogDev&#10;&#10;FdlSpringBlog web application fdlBlog-Dev commit\">\n      <created>1682461538419</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1682461538419</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"Merge pull request #1 from fodiloglu-a/Fdl-BlogDev&#10;&#10;FdlSpringBlog web application fdlBlog-Dev commit\">\n      <created>1682461789458</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1682461789458</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"FdlSpringBlog web application fdlBlog-Dev commit\">\n      <created>1682462149197</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1682462149197</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"9\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"ds\" />\n    <MESSAGE value=\"FdlSpringBlog web application developer commit\" />\n    <MESSAGE value=\"Merge pull request #1 from fodiloglu-a/Fdl-BlogDev&#10;&#10;FdlSpringBlog web application fdlBlog-Dev commit\" />\n    <MESSAGE value=\"FdlSpringBlog web application fdlBlog-Dev commit\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"FdlSpringBlog web application fdlBlog-Dev commit\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/main/java/com/busTic/busTicket/Services/BusServices/BusServicesImp.java</url>\n          <line>40</line>\n          <option name=\"timeStamp\" value=\"16\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/main/java/com/busTic/busTicket/Services/BusServices/BusServicesImp.java</url>\n          <line>65</line>\n          <option name=\"timeStamp\" value=\"20\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/main/java/com/busTic/busTicket/Services/BusServices/BusServicesImp.java</url>\n          <line>48</line>\n          <option name=\"timeStamp\" value=\"21\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\n    <SUITE FILE_PATH=\"coverage/FdlSpringBlog$FdlSpringBlog.ic\" NAME=\"FdlSpringBlog Coverage Results\" MODIFIED=\"1682459011089\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a518c358cde55fa161c07d891b11226cd5429d3a)
++++ b/.idea/workspace.xml	(date 1682576147566)
+@@ -5,7 +5,38 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="FdlSpringBlog web application fdlBlog-Dev commit">
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/CategoryController.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/CategoryDTO/CategoryRequest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/CategoryDTO/CategoryResponse.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/CategoryFacadesImp.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/CategoryFacadesInt.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/CategoryModel.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Repository/CategoryDao.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServices.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServicesImp.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogsPageController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/NewsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/NewsPageController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/BlogModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/BlogModel.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Repository/BlogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Repository/BlogDao.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Controller/BlogApi.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/BlogDto/BlogRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/BlogDto/BlogRequest.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/BlogDto/BlogResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/BlogDto/BlogResponse.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Model/BlogModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Model/BlogModel.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Repository/BlogDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Repository/BlogDao.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServices.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServicesImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServicesImp.class" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -15,6 +46,7 @@
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
++        <option value="spring-beans.schema" />
+         <option value="Interface" />
+         <option value="Class" />
+       </list>
+@@ -32,6 +64,7 @@
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="UPDATE_TYPE" value="REBASE" />
+   </component>
+   <component name="HttpClientSelectedEnvironments">
+     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
+@@ -60,27 +93,27 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;/home/enoca/Desktop/FdlSpringBlog&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+-    &quot;spring.configuration.checksum&quot;: &quot;fa50f131b5e86a3b26807733f5f11b9b&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RequestMappingsPanelOrder0": "0",
++    "RequestMappingsPanelOrder1": "1",
++    "RequestMappingsPanelWidth0": "75",
++    "RequestMappingsPanelWidth1": "75",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "WebServerToolWindowFactoryState": "false",
++    "last_opened_file_path": "/home/enoca/Desktop/FdlSpringBlog",
++    "nodejs_package_manager_path": "npm",
++    "settings.editor.selected.configurable": "project.propCompiler",
++    "spring.configuration.checksum": "fa50f131b5e86a3b26807733f5f11b9b"
+   },
+-  &quot;keyToStringList&quot;: {
+-    &quot;DatabaseDriversLRU&quot;: [
+-      &quot;mongo&quot;
++  "keyToStringList": {
++    "DatabaseDriversLRU": [
++      "mongo"
+     ]
+   }
+-}</component>
++}]]></component>
+   <component name="RebelAgentSelection">
+     <selection>jr</selection>
+   </component>
+@@ -90,6 +123,7 @@
+       <recent name="com.busTic.busTicket.Model.BusModel" />
+     </key>
+     <key name="CopyClassDialog.RECENTS_KEY">
++      <recent name="com.fdlSpring.Facades.CategoryDTO" />
+       <recent name="com.busTic.busTicket.Repository.BusDao" />
+       <recent name="com.busTic.busTicket.Facades.BusDTO.HalfBus" />
+       <recent name="com.busTic.busTicket.Facades.BusDTO" />
+@@ -103,18 +137,14 @@
+     </option>
+   </component>
+   <component name="RunManager" selected="Spring Boot.FdlSpringBlog">
+-    <configuration name="testClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="com.busTic.busTicket.testClass" />
+-      <module name="busTicket" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="com.busTic.busTicket.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
++    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
++      <method v="2" />
++    </configuration>
++    <configuration name="generated-requests | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="7" requestIdentifier="#7" runType="Run single request">
++      <method v="2" />
++    </configuration>
++    <configuration name="generated-requests | #9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="9" requestIdentifier="#9" runType="Run single request">
++      <method v="2" />
+     </configuration>
+     <configuration name="BusTicketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+       <module name="busTicket" />
+@@ -146,26 +176,13 @@
+       </deployment>
+       <method v="2" />
+     </configuration>
+-    <configuration name="resources/aplication.yml.mongodb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+-      <deployment type="docker-compose.yml">
+-        <settings>
+-          <option name="services">
+-            <list>
+-              <option value="mongodb" />
+-            </list>
+-          </option>
+-          <option name="sourceFilePath" value="src/main/resources/aplication.yml" />
+-        </settings>
+-      </deployment>
+-      <method v="2" />
+-    </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="HTTP Request.generated-requests | #9" />
++        <item itemvalue="HTTP Request.generated-requests | #7" />
++        <item itemvalue="HTTP Request.generated-requests | #6" />
+         <item itemvalue="Docker.resources: Compose Deployment" />
+         <item itemvalue="Docker.resources/aplication.yml: Compose Deployment" />
+-        <item itemvalue="Docker.resources/aplication.yml.mongodb: Compose Deployment" />
+-        <item itemvalue="Application.testClass" />
+-        <item itemvalue="Docker.resources: Compose Deployment" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -190,6 +207,8 @@
+       <workItem from="1682289719377" duration="24000" />
+       <workItem from="1682290154742" duration="12000" />
+       <workItem from="1682290275115" duration="6885000" />
++      <workItem from="1682488823972" duration="285000" />
++      <workItem from="1682499009122" duration="18312000" />
+     </task>
+     <task id="LOCAL-00001" summary="ds">
+       <created>1682292170348</created>
+@@ -247,7 +266,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1682462149197</updated>
+     </task>
+-    <option name="localTasksCounter" value="9" />
++    <task id="LOCAL-00009" summary="FdlSpringBlog web application fdlBlog-Dev commit">
++      <created>1682462485224</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1682462485224</updated>
++    </task>
++    <option name="localTasksCounter" value="10" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -261,6 +287,16 @@
+             <State />
+           </value>
+         </entry>
++        <entry key="e6edc281-7787-4a09-ab92-bfad163ac2d2">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++    <option name="OPEN_GENERIC_TABS">
++      <map>
++        <entry key="e6edc281-7787-4a09-ab92-bfad163ac2d2" value="TOOL_WINDOW" />
+       </map>
+     </option>
+   </component>
+@@ -288,11 +324,26 @@
+           <url>file://$PROJECT_DIR$/src/main/java/com/busTic/busTicket/Services/BusServices/BusServicesImp.java</url>
+           <line>48</line>
+           <option name="timeStamp" value="21" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java</url>
++          <line>28</line>
++          <option name="timeStamp" value="37" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java</url>
++          <line>27</line>
++          <option name="timeStamp" value="38" />
++        </line-breakpoint>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogsPageController.java</url>
++          <line>20</line>
++          <option name="timeStamp" value="40" />
+         </line-breakpoint>
+       </breakpoints>
+     </breakpoint-manager>
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+-    <SUITE FILE_PATH="coverage/FdlSpringBlog$FdlSpringBlog.ic" NAME="FdlSpringBlog Coverage Results" MODIFIED="1682459011089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
++    <SUITE FILE_PATH="coverage/FdlSpringBlog$FdlSpringBlog.ic" NAME="FdlSpringBlog Coverage Results" MODIFIED="1682504056253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.fdlSpring.Beans.FacadesBeans;\n\nimport com.fdlSpring.Facades.FacadesMapping.Implament.BlogFacadesImp;\nimport org.springframework.context.annotation.Bean;\nimport org.springframework.stereotype.Component;\n\n@Component\npublic class FacadesBeans {\n    @Bean\n    public BlogFacadesImp blogFacadesImp(){\n        return new BlogFacadesImp();\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java b/src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java
+--- a/src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java	(revision a518c358cde55fa161c07d891b11226cd5429d3a)
++++ b/src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java	(date 1682520128017)
+@@ -1,6 +1,7 @@
+ package com.fdlSpring.Beans.FacadesBeans;
+ 
+ import com.fdlSpring.Facades.FacadesMapping.Implament.BlogFacadesImp;
++import com.fdlSpring.Facades.FacadesMapping.Implament.CategoryFacadesImp;
+ import org.springframework.context.annotation.Bean;
+ import org.springframework.stereotype.Component;
+ 
+@@ -10,4 +11,9 @@
+     public BlogFacadesImp blogFacadesImp(){
+         return new BlogFacadesImp();
+     }
++
++    @Bean
++    public CategoryFacadesImp categoryFacadesImp(){
++        return new CategoryFacadesImp();
++    }
+ }
+Index: src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.fdlSpring.Facades.FacadesMapping.Implament;\n\nimport com.fdlSpring.Facades.BlogDto.BlogRequest;\nimport com.fdlSpring.Facades.BlogDto.BlogResponse;\nimport com.fdlSpring.Facades.FacadesMapping.Interface.BlogsFacadesInt;\nimport com.fdlSpring.Model.BlogModel;\nimport com.fdlSpring.Services.BlogManager.BlogServicesImp;\nimport jakarta.annotation.Resource;\nimport org.modelmapper.ModelMapper;\n\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class BlogFacadesImp implements BlogsFacadesInt {\n\n    @Resource\n    private ModelMapper modelMapper;\n    @Resource\n    private BlogServicesImp blogServicesImp;\n\n\n    @Override\n    public String createBlog(BlogRequest blogRequest) {\n\n        return this.blogServicesImp.createBlog(this.modelMapper.map(blogRequest, BlogModel.class));\n    }\n\n    @Override\n    public BlogResponse getBlogById(String id) {\n        return this.modelMapper.map(this.blogServicesImp.getBlogById(id),BlogResponse.class);\n    }\n\n    @Override\n    public BlogResponse getBlogByTitle(String title) {\n        return this.modelMapper.map(this.blogServicesImp.getBlogByTitle(title),BlogResponse.class);\n    }\n\n    @Override\n    public List<BlogResponse> getBlogs() {\n        List<BlogResponse> blogResponses=new ArrayList<>();\n        List<BlogModel> blogs=this.blogServicesImp.getBlogs();\n        for (BlogModel blog : blogs) {\n            blogResponses.add(this.modelMapper.map(blog, BlogResponse.class));\n\n        }\n        return blogResponses;\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java b/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java
+--- a/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java	(revision a518c358cde55fa161c07d891b11226cd5429d3a)
++++ b/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java	(date 1682512986766)
+@@ -45,4 +45,47 @@
+         }
+         return blogResponses;
+     }
++
++    @Override
++    public List<BlogResponse> getBlogsByCategory(String category) {
++        List<BlogResponse> blogResponses=new ArrayList<>();
++        List<BlogModel> responses=this.blogServicesImp.getBlogsByCategory(category);
++        for (BlogModel respons : responses) {
++            blogResponses.add(this.modelMapper.map(respons,BlogResponse.class));
++
++        }
++        return blogResponses;
++    }
++
++    @Override
++    public List<BlogResponse> getBlogsByBloggerId(String id) {
++
++        List<BlogResponse> blogResponses=new ArrayList<>();
++        List<BlogModel> responses=this.blogServicesImp.getBlogsByBloggerId(id);
++        for (BlogModel respons : responses) {
++            blogResponses.add(this.modelMapper.map(respons,BlogResponse.class));
++
++        }
++        return blogResponses;
++
++    }
++
++    @Override
++    public String updateBlog(BlogRequest blogRequest) {
++        BlogModel blogModel=this.blogServicesImp.getBlogById(blogRequest.getBlogId());
++        if (!blogModel.getBlogId().equals(blogRequest.getBlogId())){
++            this.blogServicesImp.deleteBlogById(blogModel.getBlogId());
++            blogModel.setBlogId(blogRequest.getBlogId());
++        }
++
++        blogModel.setBlogFile(blogRequest.getBlogFile());
++        blogModel.setBlogFileId(blogRequest.getBlogFileId());
++        blogModel.setBlogLogo(blogRequest.getBlogLogo());
++        blogModel.setBlogLogoId(blogRequest.getBlogLogoId());
++        blogModel.setBlogTitle(blogRequest.getBlogTitle());
++        blogModel.setBlogFileSummary(blogRequest.getBlogFileSummary());
++        blogModel.setBloggerId(blogRequest.getBloggerId());
++        blogModel.setBlogLogoUrl(blogRequest.getBlogLogoUrl());
++        return this.blogServicesImp.updateBlog(blogModel);
++    }
+ }
+Index: src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.fdlSpring.Facades.FacadesMapping.Interface;\n\nimport com.fdlSpring.Facades.BlogDto.BlogRequest;\nimport com.fdlSpring.Facades.BlogDto.BlogResponse;\n\nimport java.util.List;\n\npublic interface BlogsFacadesInt {\n\n    String createBlog(BlogRequest blogRequest);\n\n    BlogResponse getBlogById(String id);\n\n    BlogResponse getBlogByTitle(String title);\n\n    List<BlogResponse> getBlogs();\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java b/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java
+--- a/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java	(revision a518c358cde55fa161c07d891b11226cd5429d3a)
++++ b/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java	(date 1682504745817)
+@@ -14,4 +14,10 @@
+     BlogResponse getBlogByTitle(String title);
+ 
+     List<BlogResponse> getBlogs();
++
++    List<BlogResponse> getBlogsByCategory(String category);
++
++    List<BlogResponse> getBlogsByBloggerId(String id);
++
++    String updateBlog(BlogRequest blogeId);
+ }
+Index: src/main/java/com/fdlSpring/Model/CategoryModel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Model/CategoryModel.java b/src/main/java/com/fdlSpring/Model/CategoryModel.java
+new file mode 100644
+--- /dev/null	(date 1682511836066)
++++ b/src/main/java/com/fdlSpring/Model/CategoryModel.java	(date 1682511836066)
+@@ -0,0 +1,16 @@
++package com.fdlSpring.Model;
++
++import lombok.Data;
++import org.springframework.data.annotation.Id;
++import org.springframework.data.mongodb.core.mapping.Document;
++
++import java.util.List;
++
++@Document
++@Data
++public class CategoryModel {
++    @Id
++    private String categoryId;
++    private String categoryName;
++    private List<BlogModel> blogModels;
++}
+Index: src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.fdlSpring.Facades.BlogDto;\n\n\nimport lombok.Data;\n\n@Data\npublic class BlogRequest {\n\n    private  String  blogId;\n    private  String  blogTitle;\n    private  String  blogText;\n    private  String  blogComment;\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java b/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java
+--- a/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java	(revision a518c358cde55fa161c07d891b11226cd5429d3a)
++++ b/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java	(date 1682520128025)
+@@ -3,11 +3,21 @@
+ 
+ import lombok.Data;
+ 
++import java.time.LocalDateTime;
++
++
+ @Data
+ public class BlogRequest {
+ 
+     private  String  blogId;
+     private  String  blogTitle;
+-    private  String  blogText;
+-    private  String  blogComment;
++    private  String  blogCategoryId;
++    private  String  bloggerId;
++    private  byte[]  blogFile;
++    private  String  blogFileId;
++    private  String  blogFileSummary;
++    private  byte[]  blogLogo;
++    private  String  blogLogoUrl;
++    private  String  blogLogoId;
++    private  LocalDateTime date;
+ }
+Index: src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.fdlSpring.Facades.BlogDto;\n\nimport lombok.Data;\n\n@Data\npublic class BlogResponse {\n\n    private  String  blogId;\n    private  String  blogTitle;\n    private  String  blogText;\n    private  String  blogComment;\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java b/src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java
+--- a/src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java	(revision a518c358cde55fa161c07d891b11226cd5429d3a)
++++ b/src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java	(date 1682501854804)
+@@ -7,6 +7,12 @@
+ 
+     private  String  blogId;
+     private  String  blogTitle;
+-    private  String  blogText;
+-    private  String  blogComment;
++    private  String  blogCategory;
++    private  String  blogger;
++    private  byte[]  blogFile;
++    private  String  blogFileId;
++    private  String  blogFileSummary;
++    private  byte[]  blogImage;
++    private  byte[]  blogImageUrl;
++    private  byte[]  blogImageId;
+ }
+Index: src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServicesImp.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServicesImp.java b/src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServicesImp.java
+new file mode 100644
+--- /dev/null	(date 1682517262757)
++++ b/src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServicesImp.java	(date 1682517262757)
+@@ -0,0 +1,35 @@
++package com.fdlSpring.Services.CategoryManager;
++
++import com.fdlSpring.Model.CategoryModel;
++import com.fdlSpring.Repository.CategoryDao;
++import jakarta.annotation.Resource;
++import org.springframework.stereotype.Service;
++
++import java.util.List;
++
++
++@Service
++public class CategoryServicesImp implements CategoryServices{
++    @Resource
++    public CategoryDao categoryDao;
++    @Override
++    public CategoryModel getCategoryById(String categoryId) {
++        return this.categoryDao.findById(categoryId).get();
++    }
++
++    @Override
++    public List<CategoryModel> getCategory() {
++        return this.categoryDao.findAll();
++    }
++
++    @Override
++    public String update(CategoryModel categoryModel) {
++         this.categoryDao.save(categoryModel);
++         return "Successful";
++    }
++
++    @Override
++    public String createCategory(CategoryModel map) {
++          this.categoryDao.save(map);return "Successful";
++    }
++}
+Index: src/main/java/com/fdlSpring/Controller/NewsPageController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.fdlSpring.Controller;\n\npublic class NewsPageController {\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Controller/NewsPageController.java b/src/main/java/com/fdlSpring/Controller/NewsPageController.java
+--- a/src/main/java/com/fdlSpring/Controller/NewsPageController.java	(revision a518c358cde55fa161c07d891b11226cd5429d3a)
++++ b/src/main/java/com/fdlSpring/Controller/NewsPageController.java	(date 1682514908375)
+@@ -1,4 +1,18 @@
+ package com.fdlSpring.Controller;
+ 
++import org.springframework.stereotype.Controller;
++import org.springframework.web.bind.annotation.GetMapping;
++import org.springframework.web.bind.annotation.RequestMapping;
++import org.springframework.web.bind.annotation.ResponseBody;
++
++
++@RequestMapping("/v")
++@ResponseBody
++@Controller
+ public class NewsPageController {
++
++    @GetMapping()
++    public String getPage(){
++        return "String";
++    }
+ }
+Index: src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServices.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServices.java b/src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServices.java
+new file mode 100644
+--- /dev/null	(date 1682517104575)
++++ b/src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServices.java	(date 1682517104575)
+@@ -0,0 +1,17 @@
++package com.fdlSpring.Services.CategoryManager;
++
++import com.fdlSpring.Model.CategoryModel;
++
++import java.util.List;
++
++public interface CategoryServices {
++    Object getCategoryById(String categoryId);
++
++    List<CategoryModel> getCategory();
++
++
++
++    String createCategory(CategoryModel map);
++
++    String update(CategoryModel categoryModel);
++}
+Index: src/main/java/com/fdlSpring/Model/ReaderModel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Model/ReaderModel.java b/src/main/java/com/fdlSpring/Model/ReaderModel.java
+new file mode 100644
+--- /dev/null	(date 1682579321333)
++++ b/src/main/java/com/fdlSpring/Model/ReaderModel.java	(date 1682579321333)
+@@ -0,0 +1,4 @@
++package com.fdlSpring.Model;
++
++public class ReaderModel {
++}
+Index: src/main/java/com/fdlSpring/Model/AdminModel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Model/AdminModel.java b/src/main/java/com/fdlSpring/Model/AdminModel.java
+new file mode 100644
+--- /dev/null	(date 1682579321337)
++++ b/src/main/java/com/fdlSpring/Model/AdminModel.java	(date 1682579321337)
+@@ -0,0 +1,4 @@
++package com.fdlSpring.Model;
++
++public class AdminModel {
++}
+Index: src/main/java/com/fdlSpring/Model/BloggerModel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Model/BloggerModel.java b/src/main/java/com/fdlSpring/Model/BloggerModel.java
+new file mode 100644
+--- /dev/null	(date 1682579321341)
++++ b/src/main/java/com/fdlSpring/Model/BloggerModel.java	(date 1682579321341)
+@@ -0,0 +1,4 @@
++package com.fdlSpring.Model;
++
++public class BloggerModel {
++}
+Index: src/main/java/com/fdlSpring/Repository/CategoryDao.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/fdlSpring/Repository/CategoryDao.java b/src/main/java/com/fdlSpring/Repository/CategoryDao.java
+new file mode 100644
+--- /dev/null	(date 1682515013731)
++++ b/src/main/java/com/fdlSpring/Repository/CategoryDao.java	(date 1682515013731)
+@@ -0,0 +1,11 @@
++package com.fdlSpring.Repository;
++
++
++import com.fdlSpring.Model.CategoryModel;
++import org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexResolver;
++import org.springframework.data.mongodb.repository.MongoRepository;
++import org.springframework.stereotype.Repository;
++
++@Repository
++public interface CategoryDao extends MongoRepository<CategoryModel,String> {
++}
