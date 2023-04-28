@@ -1,5 +1,6 @@
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Repository/BlogDao.java
+<<<<<<< HEAD
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/TestController.java
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java
@@ -10,4 +11,20 @@
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/FdlSpringBlog.java
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/BlogApi.java
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java
+=======
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/ContactPageController.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Model/CategoryModel.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/BlogsPageController.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Model/BlogModel.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/CoreBeans/ModelMapperBeans.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/HomePageConroller.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/FdlSpringBlog.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/AccountPageController.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/NewsPageController.java
+>>>>>>> 7ba00473bb65d6454f53a94a31184822a6c455b8
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java

@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/blog")
-public class BlogApi {
+public class BlogsPageController {
 
     @Resource
     private BlogFacadesImp blogFacadesImp;
@@ -20,6 +20,10 @@ public class BlogApi {
     public String creatBlog(@RequestBody BlogRequest blogRequest){
         return this.blogFacadesImp.createBlog(blogRequest);
 
+    }
+    @PutMapping("/updateBlog")
+    public  String updateBlog(@RequestBody  BlogRequest blogRequest){
+        return this.blogFacadesImp.updateBlog(blogRequest);
     }
 
     @GetMapping("/getBlogById")
@@ -34,9 +38,14 @@ public class BlogApi {
         return this.blogFacadesImp.getBlogByTitle(title);
     }
 
-    @GetMapping("/getBlogs")
-    public List<BlogResponse> getBlogs(){
-        return this.blogFacadesImp.getBlogs();
+    @GetMapping("/getBlogsByCategory")
+    public List<BlogResponse> getBlogsByCategory(@RequestParam String category){
+        return this.blogFacadesImp.getBlogsByCategory(category);
+    }
+
+    @GetMapping("/getBlogsByBloggerId")
+    public List<BlogResponse> getBlogsByBloggerId(String id){
+        return this.blogFacadesImp.getBlogsByBloggerId(id);
     }
 
 

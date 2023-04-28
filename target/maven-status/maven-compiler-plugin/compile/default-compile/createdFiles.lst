@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 com/fdlSpring/Services/BlogManager/BlogServicesImp.class
 com/fdlSpring/Repository/BlogDao.class
 com/fdlSpring/Beans/FacadesBeans/FacadesBeans.class
@@ -8,6 +9,22 @@ com/fdlSpring/Services/BlogManager/BlogServices.class
 com/fdlSpring/Facades/BlogDto/BlogRequest.class
 com/fdlSpring/Controller/TestController.class
 com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.class
+=======
+com/fdlSpring/Controller/AccountPageController.class
+com/fdlSpring/Services/BlogManager/BlogServicesImp.class
+com/fdlSpring/Repository/BlogDao.class
+com/fdlSpring/Beans/FacadesBeans/FacadesBeans.class
+com/fdlSpring/Controller/HomePageConroller.class
+com/fdlSpring/FdlSpringBlog.class
+com/fdlSpring/Facades/BlogDto/BlogResponse.class
+com/fdlSpring/Model/CategoryModel.class
+com/fdlSpring/Services/BlogManager/BlogServices.class
+com/fdlSpring/Facades/BlogDto/BlogRequest.class
+com/fdlSpring/Controller/ContactPageController.class
+com/fdlSpring/Controller/BlogsPageController.class
+com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.class
+com/fdlSpring/Controller/NewsPageController.class
+>>>>>>> 7ba00473bb65d6454f53a94a31184822a6c455b8
 com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.class
 com/fdlSpring/Model/BlogModel.class
 com/fdlSpring/CoreBeans/ModelMapperBeans.class

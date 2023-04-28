@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="FdlSpringBlog web application developer commit">
       <change afterPath="$PROJECT_DIR$/.idea/artifacts/FdlSpringBlog_Web_exploded.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/consolestorage/flexible_search_region.json" afterDir="false" />
@@ -27,7 +28,15 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServices.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServicesImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServicesImp.class" afterDir="false" />
+=======
+<<<<<<< HEAD
+    <list default="true" id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="FdlSpringBlog web application fdlBlog-Dev commit" />
+=======
+    <list default="true" id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="FdlSpringBlog web application fdlBlog-Dev commit">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java" afterDir="false" />
+>>>>>>> 7ba00473bb65d6454f53a94a31184822a6c455b8
     </list>
+>>>>>>> f6d6172a00f8a27012b1a69ce6c72ae8cdb572a3
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +45,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Class" />
         <option value="Jsp File" />
@@ -43,12 +53,26 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Abdulmutalip &lt;109350249+fodiloglu-a@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="S1" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/ws-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/graphql-requests.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-tests.http" environment="test" />
   </component>
   <component name="HttpClientSelectedEnvironments">
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
@@ -77,6 +101,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
@@ -97,13 +122,29 @@
     "rest.client.default.execution.environment": "test",
     "settings.editor.selected.configurable": "project.propCompiler",
     "spring.configuration.checksum": "fa50f131b5e86a3b26807733f5f11b9b"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/enoca/Desktop/FdlSpringBlog&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;fa50f131b5e86a3b26807733f5f11b9b&quot;
+>>>>>>> 7ba00473bb65d6454f53a94a31184822a6c455b8
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mongo"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
@@ -119,6 +160,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.fdlSpring.Facades.CategoryDTO" />
       <recent name="com.busTic.busTicket.Repository.BusDao" />
       <recent name="com.busTic.busTicket.Facades.BusDTO.HalfBus" />
       <recent name="com.busTic.busTicket.Facades.BusDTO" />
@@ -131,7 +173,27 @@
       </set>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager">
+=======
+  <component name="RunManager" selected="Spring Boot.FdlSpringBlog">
+    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="7" requestIdentifier="#7" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #9" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="9" requestIdentifier="#9" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="BusTicketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="busTicket" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.busTic.busTicket.BusTicketApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+>>>>>>> 7ba00473bb65d6454f53a94a31184822a6c455b8
     <configuration name="FdlSpringBlog" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="FdlSpringBlog" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.fdlSpring.FdlSpringBlog" />
@@ -139,8 +201,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
+=======
+    <configuration name="resources: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="src/main/resources/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="resources/aplication.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="src/main/resources/aplication.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #9" />
+        <item itemvalue="HTTP Request.generated-requests | #7" />
+        <item itemvalue="HTTP Request.generated-requests | #6" />
+        <item itemvalue="Docker.resources: Compose Deployment" />
+        <item itemvalue="Docker.resources/aplication.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+>>>>>>> 7ba00473bb65d6454f53a94a31184822a6c455b8
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="showFilesets" value="false" />
+    <option name="showInfrastructureBeans" value="false" />
+    <option name="showDoc" value="false" />
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="" />
@@ -155,6 +251,8 @@
       <workItem from="1682289719377" duration="24000" />
       <workItem from="1682290154742" duration="12000" />
       <workItem from="1682290275115" duration="6885000" />
+      <workItem from="1682488823972" duration="285000" />
+      <workItem from="1682499009122" duration="18721000" />
     </task>
     <task id="LOCAL-00001" summary="ds">
       <created>1682292170348</created>
@@ -191,7 +289,56 @@
       <option name="project" value="LOCAL" />
       <updated>1682293223131</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge pull request #1 from fodiloglu-a/Fdl-BlogDev&#10;&#10;FdlSpringBlog web application fdlBlog-Dev commit">
+      <created>1682461538419</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682461538419</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Merge pull request #1 from fodiloglu-a/Fdl-BlogDev&#10;&#10;FdlSpringBlog web application fdlBlog-Dev commit">
+      <created>1682461789458</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682461789458</updated>
+    </task>
+    <task id="LOCAL-00008" summary="FdlSpringBlog web application fdlBlog-Dev commit">
+      <created>1682462149197</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682462149197</updated>
+    </task>
+    <task id="LOCAL-00009" summary="FdlSpringBlog web application fdlBlog-Dev commit">
+      <created>1682462485224</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682462485224</updated>
+    </task>
+    <task id="LOCAL-00010" summary="FdlSpringBlog web application fdlBlog-Dev commit">
+      <created>1682579378615</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1682579378616</updated>
+    </task>
+    <task id="LOCAL-00011" summary="FdlSpringBlog web application fdlBlog-Dev commit">
+      <created>1682579582396</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1682579582396</updated>
+    </task>
+    <task id="LOCAL-00012" summary="FdlSpringBlog web application fdlBlog-Dev commit">
+      <created>1682579589087</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682579589087</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +355,16 @@
             <State />
           </value>
         </entry>
+        <entry key="e6edc281-7787-4a09-ab92-bfad163ac2d2">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="e6edc281-7787-4a09-ab92-bfad163ac2d2" value="TOOL_WINDOW" />
       </map>
     </option>
   </component>
@@ -215,7 +372,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="ds" />
     <MESSAGE value="FdlSpringBlog web application developer commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="FdlSpringBlog web application developer commit" />
+    <MESSAGE value="Merge pull request #1 from fodiloglu-a/Fdl-BlogDev&#10;&#10;FdlSpringBlog web application fdlBlog-Dev commit" />
+    <MESSAGE value="FdlSpringBlog web application fdlBlog-Dev commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="FdlSpringBlog web application fdlBlog-Dev commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -236,14 +395,18 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="22" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogsPageController.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/FdlSpringBlog$FdlSpringBlog.ic" NAME="FdlSpringBlog Coverage Results" MODIFIED="1682459011089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+=======
+    <SUITE FILE_PATH="coverage/FdlSpringBlog$FdlSpringBlog.ic" NAME="FdlSpringBlog Coverage Results" MODIFIED="1682504056253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+>>>>>>> 7ba00473bb65d6454f53a94a31184822a6c455b8
   </component>
 </project>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 GET https://httpbin.org/get
 
 <> 2023-04-26T011334.200.json
@@ -72,6 +73,29 @@ GET http://localhost:8080
 GET http://localhost:8080/v1
 
 <> 2023-04-26T010327.404.json
+=======
+GET http://localhost:8080/category/getCategory
+
+<> 2023-04-26T165611.404.json
+
+###
+
+POST http://localhost:8080/category/create
+
+<> 2023-04-26T165422.500.json
+
+###
+
+GET http://localhost:8080/v
+
+<> 2023-04-26T161517.200.txt
+
+###
+
+GET http://localhost:8080/v
+
+<> 2023-04-26T161409.404.json
+>>>>>>> 7ba00473bb65d6454f53a94a31184822a6c455b8
 
 ###
 

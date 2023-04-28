@@ -7,10 +7,18 @@
           <deploymentDescriptor name="sun-web.xml" url="file://$MODULE_DIR$/src/main/WEB-INF/sun-web.xml" />
           <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp" />
         </descriptors>
+<<<<<<< HEAD
         <webroots>
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
         <sourceRoots />
+=======
+        <webroots />
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </sourceRoots>
+>>>>>>> 7ba00473bb65d6454f53a94a31184822a6c455b8
       </configuration>
     </facet>
     <facet type="jpa" name="JPA">
