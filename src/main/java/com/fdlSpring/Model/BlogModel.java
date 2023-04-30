@@ -23,7 +23,6 @@ public class BlogModel {
     private String blogFileId;
     private String blogFileSummary;
     private byte[] blogLogo;
-    private String blogLogoUrl;
     private String blogLogoId;
 
 

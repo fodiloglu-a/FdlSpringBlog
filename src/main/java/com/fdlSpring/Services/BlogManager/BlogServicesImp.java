@@ -1,14 +1,15 @@
 package com.fdlSpring.Services.BlogManager;
 
-import com.fdlSpring.Facades.BlogDto.BlogRequest;
+import com.fdlSpring.Facades.BlogDTO;
 import com.fdlSpring.Model.BlogModel;
+import com.fdlSpring.Model.BloggerModel;
 import com.fdlSpring.Model.CategoryModel;
 import com.fdlSpring.Repository.BlogDao;
-import com.fdlSpring.Repository.CategoryDao;
+import com.fdlSpring.Services.BloggerManager.BloggerServicesImp;
+import com.fdlSpring.Services.CategoryManager.CategoryServicesImp;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
-import java.awt.font.TextHitInfo;
 import java.util.List;
 import java.util.Optional;
 
@@ -18,21 +19,43 @@ public class BlogServicesImp implements BlogServices{
     @Resource
     private BlogDao blogDao;
     @Resource
-    private CategoryDao categoryDao;
+    private CategoryServicesImp categoryServicesImp;
+    @Resource
+    private BloggerServicesImp bloggerServicesImp;
+
 
     @Override
     public String createBlog(BlogModel model) {
 
+        BloggerModel bloggerModel=null;
+        CategoryModel categoryModel=null;
         try
         {
-            CategoryModel categoryModel=categoryDao.findById(model.getCategoryId()).get();
-            if (!categoryModel.getCategoryId().isEmpty()){
-                model.setBlogCategoryModel(categoryModel);
+            try {
+                  bloggerModel= bloggerServicesImp.getById(model.getBloggerId());
+
+            }catch (Exception e) {
+
+            }
+            try {
+                categoryModel=categoryServicesImp.getCategoryById(model.getCategoryId());
 
 
-            }else {return "Category Id Not Be Null";}
-        }catch (Exception e){return e.getMessage();}
+            }catch (Exception e){
 
+            }
+
+
+        }catch (Exception e){
+
+        }
+
+
+
+        finally {
+            model.setBloggerModel(bloggerModel);
+            model.setBlogCategoryModel(categoryModel);
+        }
 
 
         return "Success";
@@ -66,12 +89,28 @@ public class BlogServicesImp implements BlogServices{
     }
 
     @Override
-    public String updateBlog(BlogModel blogModel) {
+    public String updateBlog(BlogDTO dto, String id) {
+        BlogModel blog=null;
+       try {
+            blog=blogDao.findById(id).get();
+       }catch (Exception e){
+           return e.getMessage();
+       }
+       blog.setBlogId(dto.getBlogId());
+       blog.setBlogFile(dto.getBlogFile());
+       blog.setBlogTitle(dto.getBlogTitle());
+       blog.setBlogCategoryModel(categoryServicesImp.getCategoryById(dto.getBlogCategoryId()));
+       blog.setBloggerModel(bloggerServicesImp.getById(dto.getBloggerId()));
+    if (blog.getBlogId().isEmpty())
+    {
+        return "Not Be Successful";
+    }
+    else {
+        blogDao.save(blog);
+        return "Successful";
+    }
 
 
-        this.blogDao.save(blogModel);
-
-        return "null";
     }
 
     @Override

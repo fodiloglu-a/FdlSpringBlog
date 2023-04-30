@@ -4,13 +4,96 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="FdlSpringBlog web application fdlBlog-Dev commit" />
-=======
     <list default="true" id="5125350b-b842-4346-9cd2-0e7146dabc6e" name="Changes" comment="FdlSpringBlog web application fdlBlog-Dev commit">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/ModelController/BlogsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/ModelController/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/ModelController/LogoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/FileFacadesImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/LogoFacadesImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/FileFacadesInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/LogoFacadesInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FileDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/LogoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/FileModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/LogoModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Repository/FileDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Repository/LogoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/FileManager/FileServicesImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/FileManager/FileServicesInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/LogoManager/LogoServicesImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/LogoManager/LogoServicesInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/AccountPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/PageController/AccountPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/PageController/BlogsPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/ModelController/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/ContactPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/PageController/ContactPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/HomePageConroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/PageController/HomePageConroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/ModelController/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/ModelController/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/ModelController/BloggerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/ModelController/BloggerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/ModelController/ReaderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/ModelController/ReaderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/NewsPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/PageController/NewsPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/AdminDTO/AdminRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/AdminDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/AdminDTO/AdminResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BloggerDTO/BloggerRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BloggerDTO/BloggerResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/BloggerDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/CategoryDTO/CategoryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/CategoryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/CategoryDTO/CategoryResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/AdminFacadesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/AdminFacadesImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BloggerFacadesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BloggerFacadesImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/CategoryFacadesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/CategoryFacadesImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/ReaderFacadesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/ReaderFacadesImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/AdminFacedesInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/AdminFacedesInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BloggerFacadesInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BloggerFacadesInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/CategoryFacadesInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/CategoryFacadesInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/ReaderFacadesInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/ReaderFacadesInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/ReaderDTO/ReaderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/ReaderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/ReaderDTO/ReaderResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/AdminModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/AdminModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/BlogModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/BlogModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/BloggerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Model/BloggerModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/AdminManager/AdminServicesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/AdminManager/AdminServicesImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BloggerManager/BloggerServicesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BloggerManager/BloggerServicesImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BloggerManager/BloggerServicesInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BloggerManager/BloggerServicesInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServicesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServicesImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/ReaderManager/ReaderServicesImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/ReaderManager/ReaderServicesImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/ReaderManager/ReaderServicesInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/ReaderManager/ReaderServicesInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Controller/AccountPageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Controller/BlogsPageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Controller/CategoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Controller/ContactPageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Controller/HomePageConroller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Controller/NewsPageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/BlogDto/BlogRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/BlogDto/BlogResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/CategoryDTO/CategoryRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/CategoryDTO/CategoryResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Implament/CategoryFacadesImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Implament/CategoryFacadesImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Interface/CategoryFacadesInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Facades/FacadesMapping/Interface/CategoryFacadesInt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Model/BlogModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Model/BlogModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Model/CategoryModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Model/CategoryModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServicesImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/BlogManager/BlogServicesImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/CategoryManager/CategoryServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/CategoryManager/CategoryServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/CategoryManager/CategoryServicesImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fdlSpring/Services/CategoryManager/CategoryServicesImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/fdlSpringBlog-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/fdlSpringBlog-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/fdlSpringBlog-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/fdlSpringBlog-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.fdlSpring.FdlSpringBlogTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.fdlSpring.FdlSpringBlogTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.fdlSpring.FdlSpringBlogTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.fdlSpring.FdlSpringBlogTests.txt" afterDir="false" />
     </list>
->>>>>>> f6d6172a00f8a27012b1a69ce6c72ae8cdb572a3
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +159,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/enoca/Desktop/FdlSpringBlog&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/enoca/Downloads/path-compare&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;fa50f131b5e86a3b26807733f5f11b9b&quot;
@@ -149,6 +232,15 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Docker.resources/aplication.yml: Compose Deployment" />
+      <item itemvalue="Docker.resources: Compose Deployment" />
+      <item itemvalue="HTTP Request.generated-requests | #6" />
+      <item itemvalue="HTTP Request.generated-requests | #7" />
+      <item itemvalue="HTTP Request.generated-requests | #9" />
+      <item itemvalue="Spring Boot.BusTicketApplication" />
+      <item itemvalue="Spring Boot.FdlSpringBlog" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.generated-requests | #9" />
@@ -182,6 +274,8 @@
       <workItem from="1682290275115" duration="6885000" />
       <workItem from="1682488823972" duration="285000" />
       <workItem from="1682499009122" duration="18721000" />
+      <workItem from="1682687761714" duration="2132000" />
+      <workItem from="1682860157289" duration="12511000" />
     </task>
     <task id="LOCAL-00001" summary="ds">
       <created>1682292170348</created>
@@ -320,9 +414,19 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/BlogsPageController.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="40" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/fdlSpring/Controller/ModelController/BloggerController.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BloggerFacadesImp.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

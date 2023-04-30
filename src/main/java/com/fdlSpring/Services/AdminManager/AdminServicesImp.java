@@ -3,9 +3,10 @@ package com.fdlSpring.Services.AdminManager;
 import com.fdlSpring.Model.AdminModel;
 import com.fdlSpring.Repository.AdminDao;
 import jakarta.annotation.Resource;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class AdminServicesImp implements AdminServicesInt{
     @Resource
     private AdminDao adminDao;

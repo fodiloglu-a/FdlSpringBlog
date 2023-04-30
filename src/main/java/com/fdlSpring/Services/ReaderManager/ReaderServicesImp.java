@@ -1,13 +1,12 @@
 package com.fdlSpring.Services.ReaderManager;
 
-import com.fdlSpring.Facades.ReaderDTO.ReaderRequest;
 import com.fdlSpring.Model.ReaderModel;
 import com.fdlSpring.Repository.ReaderDao;
 import jakarta.annotation.Resource;
-import org.modelmapper.internal.bytebuddy.pool.TypePool;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class ReaderServicesImp implements ReaderServicesInt {
 
     @Resource

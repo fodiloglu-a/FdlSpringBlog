@@ -1,10 +1,11 @@
 package com.fdlSpring.Facades.FacadesMapping.Implament;
 
-import com.fdlSpring.Facades.BlogDto.BlogRequest;
-import com.fdlSpring.Facades.BlogDto.BlogResponse;
+import com.fdlSpring.Facades.BlogDTO;
 import com.fdlSpring.Facades.FacadesMapping.Interface.BlogsFacadesInt;
 import com.fdlSpring.Model.BlogModel;
+import com.fdlSpring.Model.CategoryModel;
 import com.fdlSpring.Services.BlogManager.BlogServicesImp;
+import com.fdlSpring.Services.CategoryManager.CategoryServices;
 import jakarta.annotation.Resource;
 import org.modelmapper.ModelMapper;
 
@@ -20,50 +21,50 @@ public class BlogFacadesImp implements BlogsFacadesInt {
 
 
     @Override
-    public String createBlog(BlogRequest blogRequest) {
+    public String createBlog(BlogDTO blogDTO) {
 
-        return this.blogServicesImp.createBlog(this.modelMapper.map(blogRequest, BlogModel.class));
+        return this.blogServicesImp.createBlog(this.modelMapper.map(blogDTO, BlogModel.class));
     }
 
     @Override
-    public BlogResponse getBlogById(String id) {
-        return this.modelMapper.map(this.blogServicesImp.getBlogById(id),BlogResponse.class);
+    public BlogDTO getBlogById(String id) {
+        return this.modelMapper.map(this.blogServicesImp.getBlogById(id),BlogDTO.class);
     }
 
     @Override
-    public BlogResponse getBlogByTitle(String title) {
-        return this.modelMapper.map(this.blogServicesImp.getBlogByTitle(title),BlogResponse.class);
+    public BlogDTO getBlogByTitle(String title) {
+        return this.modelMapper.map(this.blogServicesImp.getBlogByTitle(title),BlogDTO.class);
     }
 
     @Override
-    public List<BlogResponse> getBlogs() {
-        List<BlogResponse> blogResponses=new ArrayList<>();
+    public List<BlogDTO> getBlogs() {
+        List<BlogDTO> blogResponses=new ArrayList<>();
         List<BlogModel> blogs=this.blogServicesImp.getBlogs();
         for (BlogModel blog : blogs) {
-            blogResponses.add(this.modelMapper.map(blog, BlogResponse.class));
+            blogResponses.add(this.modelMapper.map(blog, BlogDTO.class));
 
         }
         return blogResponses;
     }
 
     @Override
-    public List<BlogResponse> getBlogsByCategory(String category) {
-        List<BlogResponse> blogResponses=new ArrayList<>();
+    public List<BlogDTO> getBlogsByCategory(String category) {
+        List<BlogDTO> blogResponses=new ArrayList<>();
         List<BlogModel> responses=this.blogServicesImp.getBlogsByCategory(category);
         for (BlogModel respons : responses) {
-            blogResponses.add(this.modelMapper.map(respons,BlogResponse.class));
+            blogResponses.add(this.modelMapper.map(respons,BlogDTO.class));
 
         }
         return blogResponses;
     }
 
     @Override
-    public List<BlogResponse> getBlogsByBloggerId(String id) {
+    public List<BlogDTO> getBlogsByBloggerId(String id) {
 
-        List<BlogResponse> blogResponses=new ArrayList<>();
+        List<BlogDTO> blogResponses=new ArrayList<>();
         List<BlogModel> responses=this.blogServicesImp.getBlogsByBloggerId(id);
         for (BlogModel respons : responses) {
-            blogResponses.add(this.modelMapper.map(respons,BlogResponse.class));
+            blogResponses.add(this.modelMapper.map(respons,BlogDTO.class));
 
         }
         return blogResponses;
@@ -71,21 +72,7 @@ public class BlogFacadesImp implements BlogsFacadesInt {
     }
 
     @Override
-    public String updateBlog(BlogRequest blogRequest) {
-        BlogModel blogModel=this.blogServicesImp.getBlogById(blogRequest.getBlogId());
-        if (!blogModel.getBlogId().equals(blogRequest.getBlogId())){
-            this.blogServicesImp.deleteBlogById(blogModel.getBlogId());
-            blogModel.setBlogId(blogRequest.getBlogId());
-        }
-
-        blogModel.setBlogFile(blogRequest.getBlogFile());
-        blogModel.setBlogFileId(blogRequest.getBlogFileId());
-        blogModel.setBlogLogo(blogRequest.getBlogLogo());
-        blogModel.setBlogLogoId(blogRequest.getBlogLogoId());
-        blogModel.setBlogTitle(blogRequest.getBlogTitle());
-        blogModel.setBlogFileSummary(blogRequest.getBlogFileSummary());
-        blogModel.setBloggerId(blogRequest.getBloggerId());
-        blogModel.setBlogLogoUrl(blogRequest.getBlogLogoUrl());
-        return this.blogServicesImp.updateBlog(blogModel);
+    public String updateBlog(BlogDTO blogDTO ,String id) {
+        return this.blogServicesImp.updateBlog(blogDTO,id);
     }
 }

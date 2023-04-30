@@ -1,10 +1,7 @@
 package com.fdlSpring.Controller.ModelController;
 
-import com.fdlSpring.Facades.AdminDTO.AdminRequest;
-import com.fdlSpring.Facades.AdminDTO.AdminResponse;
+import com.fdlSpring.Facades.AdminDTO;
 import com.fdlSpring.Facades.FacadesMapping.Implament.AdminFacadesImp;
-import com.fdlSpring.Facades.ReaderDTO.ReaderRequest;
-import com.fdlSpring.Facades.ReaderDTO.ReaderResponse;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,14 +14,14 @@ public class AdminController {
     private AdminFacadesImp adminFacadesImp;
 
     @PostMapping("/create")
-    public String createAdmin(@RequestBody AdminRequest request){
+    public String createAdmin(@RequestBody AdminDTO request){
         return adminFacadesImp.createAdmin(request);
     }
 
 
 
     @PutMapping("/update")
-    public String updateAdmin(@RequestBody AdminRequest request, @RequestParam String id){
+    public String updateAdmin(@RequestBody AdminDTO request, @RequestParam String id){
         return adminFacadesImp.updateAdmin(request,id);
     }
     @DeleteMapping("/delete")
@@ -34,11 +31,12 @@ public class AdminController {
 
 
     @GetMapping("/getById")
-    public AdminResponse getById(@RequestParam String id){
+    public AdminDTO getById(@RequestParam String id){
         return adminFacadesImp.getById(id);
     }
-    @GetMapping("/getBlogger")
-    public List<AdminResponse> getAllAdmin(){
+
+    @GetMapping("/getAll")
+    public List<AdminDTO> getAllAdmin(){
         return adminFacadesImp.getAllAdmin();
     }
 }

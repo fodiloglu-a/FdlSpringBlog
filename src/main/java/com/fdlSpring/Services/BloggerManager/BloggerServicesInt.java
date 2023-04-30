@@ -1,8 +1,5 @@
 package com.fdlSpring.Services.BloggerManager;
 
-import com.fdlSpring.Facades.AdminDTO.AdminRequest;
-import com.fdlSpring.Facades.BloggerDTO.BloggerRequest;
-import com.fdlSpring.Model.AdminModel;
 import com.fdlSpring.Model.BloggerModel;
 
 import java.util.List;
