@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Repository/BlogDao.java
 <<<<<<< HEAD
@@ -13,18 +14,62 @@
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java
 =======
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/ContactPageController.java
+=======
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/ModelController/AdminController.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Services/AdminManager/AdminServicesInt.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/ReaderFacadesInt.java
+>>>>>>> 6aab08eda51f71e21208b7f97f51eea6c259458c
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/BlogDto/BlogResponse.java
-/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Model/CategoryModel.java
-/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/BlogsPageController.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServices.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/BloggerDTO/BloggerResponse.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/CategoryFacadesImp.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/CategoryDTO/CategoryResponse.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Model/BloggerModel.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Services/BloggerManager/BloggerServicesImp.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/AdminDTO/AdminResponse.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/AdminDTO/AdminRequest.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Repository/CategoryDao.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Repository/BlogDao.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Services/ReaderManager/ReaderServicesInt.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Model/AdminModel.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/AdminFacadesImp.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Services/ReaderManager/ReaderServicesImp.java
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Model/BlogModel.java
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/CoreBeans/ModelMapperBeans.java
-/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/HomePageConroller.java
-/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java
-/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BlogsFacadesInt.java
-/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/FdlSpringBlog.java
-/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BlogFacadesImp.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/ReaderDTO/ReaderRequest.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Model/ReaderModel.java
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/AccountPageController.java
+<<<<<<< HEAD
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/NewsPageController.java
 >>>>>>> 7ba00473bb65d6454f53a94a31184822a6c455b8
+=======
+>>>>>>> 6aab08eda51f71e21208b7f97f51eea6c259458c
 /home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Beans/FacadesBeans/FacadesBeans.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Services/BlogManager/BlogServicesImp.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/CategoryFacadesInt.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/CategoryDTO/CategoryRequest.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Repository/ReaderDao.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/BlogDto/BlogRequest.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/ReaderFacadesImp.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Repository/BloggerDao.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/AdminFacedesInt.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/CategoryController.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/HomePageConroller.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/BloggerDTO/BloggerRequest.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Services/BlogManager/BlogServices.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/FdlSpringBlog.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Repository/AdminDao.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/ModelController/ReaderController.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Interface/BloggerFacadesInt.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Services/BloggerManager/BloggerServicesInt.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/ContactPageController.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/ReaderDTO/ReaderResponse.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/ModelController/BloggerController.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/BlogsPageController.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Services/CategoryManager/CategoryServicesImp.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Facades/FacadesMapping/Implament/BloggerFacadesImp.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Controller/NewsPageController.java
+/home/enoca/Desktop/FdlSpringBlog/src/main/java/com/fdlSpring/Services/AdminManager/AdminServicesImp.java

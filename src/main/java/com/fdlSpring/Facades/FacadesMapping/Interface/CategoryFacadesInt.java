@@ -1,16 +1,17 @@
 package com.fdlSpring.Facades.FacadesMapping.Interface;
 
-import com.fdlSpring.Facades.CategoryDTO.CategoryRequest;
-import com.fdlSpring.Facades.CategoryDTO.CategoryResponse;
+import com.fdlSpring.Facades.CategoryDTO;
 
 import java.util.List;
 
 public interface CategoryFacadesInt {
-    String createCategory(CategoryRequest categoryRequest);
+    String createCategory(CategoryDTO categoryRequest);
 
-    String update(CategoryRequest categoryRequest, String updateId);
+    String update(CategoryDTO categoryRequest, String updateId);
 
-    List<CategoryResponse> getCategory();
+    List<CategoryDTO> getCategory();
 
-    CategoryResponse getCategoryById(String categoryId);
+    CategoryDTO getCategoryById(String categoryId);
+
+    String delete(String id);
 }

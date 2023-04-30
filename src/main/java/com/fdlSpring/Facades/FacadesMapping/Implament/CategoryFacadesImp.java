@@ -1,7 +1,6 @@
 package com.fdlSpring.Facades.FacadesMapping.Implament;
 
-import com.fdlSpring.Facades.CategoryDTO.CategoryRequest;
-import com.fdlSpring.Facades.CategoryDTO.CategoryResponse;
+import com.fdlSpring.Facades.CategoryDTO;
 import com.fdlSpring.Facades.FacadesMapping.Interface.CategoryFacadesInt;
 import com.fdlSpring.Model.CategoryModel;
 import com.fdlSpring.Services.CategoryManager.CategoryServicesImp;
@@ -18,7 +17,7 @@ public class CategoryFacadesImp implements CategoryFacadesInt {
     @Resource
     private ModelMapper modelMapper;
     @Override
-    public String createCategory(CategoryRequest categoryRequest) {
+    public String createCategory(CategoryDTO categoryRequest) {
         if (categoryRequest.getCategoryId().isEmpty() || categoryRequest.getCategoryName().isEmpty()){
             return "not Successful";
 
@@ -29,7 +28,7 @@ public class CategoryFacadesImp implements CategoryFacadesInt {
     }
 
     @Override
-    public String update(CategoryRequest categoryRequest, String updateId) {
+    public String update(CategoryDTO categoryRequest, String updateId) {
         CategoryModel categoryModel=this.categoryServicesImp.getCategoryById(updateId);
         if(categoryModel.getCategoryId().isEmpty())
         {
@@ -51,21 +50,26 @@ public class CategoryFacadesImp implements CategoryFacadesInt {
     }
 
     @Override
-    public List<CategoryResponse> getCategory() {
-        List<CategoryResponse>categoryResponses=new ArrayList<>();
+    public List<CategoryDTO> getCategory() {
+        List<CategoryDTO> categoryRespons =new ArrayList<>();
         List<CategoryModel> categoryModels=categoryServicesImp.getCategory();
         for (CategoryModel categoryModel : categoryModels) {
-            categoryResponses.add(this.modelMapper.map(categoryModel,CategoryResponse.class));
+            categoryRespons.add(this.modelMapper.map(categoryModel, CategoryDTO.class));
 
         }
-        return categoryResponses ;
+        return categoryRespons;
     }
 
     @Override
-    public CategoryResponse getCategoryById(String categoryId) {
+    public CategoryDTO getCategoryById(String categoryId) {
         CategoryModel model = this.categoryServicesImp.getCategoryById(categoryId);
-        CategoryResponse response=this.modelMapper.map(model,CategoryResponse.class);
+        CategoryDTO response=this.modelMapper.map(model, CategoryDTO.class);
 
         return response;
+    }
+
+    @Override
+    public String delete(String id) {
+        return categoryServicesImp.delete(id);
     }
 }

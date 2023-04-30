@@ -1,10 +1,7 @@
 package com.fdlSpring.Facades.FacadesMapping.Implament;
 
-import com.fdlSpring.Facades.BloggerDTO.BloggerResponse;
 import com.fdlSpring.Facades.FacadesMapping.Interface.ReaderFacadesInt;
-import com.fdlSpring.Facades.ReaderDTO.ReaderRequest;
-import com.fdlSpring.Facades.ReaderDTO.ReaderResponse;
-import com.fdlSpring.Model.AdminModel;
+import com.fdlSpring.Facades.ReaderDTO;
 import com.fdlSpring.Model.ReaderModel;
 import com.fdlSpring.Services.ReaderManager.ReaderServicesImp;
 import jakarta.annotation.Resource;
@@ -21,12 +18,12 @@ public class ReaderFacadesImp  implements ReaderFacadesInt {
     @Resource
     private ReaderServicesImp readerServicesImp;
     @Override
-    public String createReader(ReaderRequest request) {
+    public String createReader(ReaderDTO request) {
         return readerServicesImp.createReader(mapper.map(request, ReaderModel.class));
     }
 
     @Override
-    public String updateReader(ReaderRequest request, String id) {
+    public String updateReader(ReaderDTO request, String id) {
         ReaderModel readerModel=mapper.map(request,ReaderModel.class);
         return readerServicesImp.updateReader(readerModel,id);
     }
@@ -37,16 +34,16 @@ public class ReaderFacadesImp  implements ReaderFacadesInt {
     }
 
     @Override
-    public ReaderResponse getById(String id) {
-        return mapper.map(readerServicesImp.getById(id),ReaderResponse.class);
+    public ReaderDTO getById(String id) {
+        return mapper.map(readerServicesImp.getById(id), ReaderDTO.class);
     }
 
     @Override
-    public List<ReaderResponse> getAllReader() {
-        List<ReaderResponse> responses=new ArrayList<>();
+    public List<ReaderDTO> getAllReader() {
+        List<ReaderDTO> responses=new ArrayList<>();
         List<ReaderModel> models=readerServicesImp.getAllReader();
         for (ReaderModel model : models) {
-            responses.add(mapper.map(model,ReaderResponse.class));
+            responses.add(mapper.map(model, ReaderDTO.class));
         }
         return responses;
     }

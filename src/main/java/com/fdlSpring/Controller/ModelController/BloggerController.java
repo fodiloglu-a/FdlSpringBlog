@@ -1,13 +1,9 @@
 package com.fdlSpring.Controller.ModelController;
 
 
-import com.fdlSpring.Facades.AdminDTO.AdminRequest;
-import com.fdlSpring.Facades.AdminDTO.AdminResponse;
-import com.fdlSpring.Facades.BloggerDTO.BloggerRequest;
-import com.fdlSpring.Facades.BloggerDTO.BloggerResponse;
+import com.fdlSpring.Facades.BloggerDTO;
 import com.fdlSpring.Facades.FacadesMapping.Implament.BloggerFacadesImp;
 import jakarta.annotation.Resource;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,14 +16,14 @@ public class BloggerController {
 
 
     @PostMapping("/create")
-    public String createBlogger(@RequestBody AdminRequest request){
+    public String createBlogger(@RequestBody BloggerDTO request){
         return bloggerFacadesImp.createBlogger(request);
     }
 
 
 
     @PutMapping("/update")
-    public String updateBlogger(@RequestBody BloggerRequest request, @RequestParam String id){
+    public String updateBlogger(@RequestBody BloggerDTO request, @RequestParam String id){
         return bloggerFacadesImp.updateBlogger(request,id);
     }
     @DeleteMapping("/delete")
@@ -37,11 +33,11 @@ public class BloggerController {
 
 
     @GetMapping("/getById")
-    public BloggerResponse getById(@RequestParam String id){
+    public BloggerDTO getById(@RequestParam String id){
         return bloggerFacadesImp.getById(id);
     }
     @GetMapping("/getBlogger")
-    public List<BloggerResponse> getAllBlogger(){
+    public List<BloggerDTO> getAllBlogger(){
         return bloggerFacadesImp.getAllBlogger();
     }
 

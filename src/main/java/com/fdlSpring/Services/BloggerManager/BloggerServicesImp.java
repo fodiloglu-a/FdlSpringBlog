@@ -1,14 +1,12 @@
 package com.fdlSpring.Services.BloggerManager;
 
-import com.fdlSpring.Facades.AdminDTO.AdminRequest;
-import com.fdlSpring.Facades.BloggerDTO.BloggerRequest;
-import com.fdlSpring.Model.AdminModel;
 import com.fdlSpring.Model.BloggerModel;
 import com.fdlSpring.Repository.BloggerDao;
 import jakarta.annotation.Resource;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class BloggerServicesImp implements BloggerServicesInt{
     @Resource
     private BloggerDao bloggerDao;
@@ -24,6 +22,7 @@ public class BloggerServicesImp implements BloggerServicesInt{
         bloggerModel.setBloggerEmail(request.getBloggerEmail());
         bloggerModel.setBloggerSurname(request.getBloggerSurname());
         bloggerModel.setBloggerName(request.getBloggerName());
+        bloggerDao.save(bloggerModel);
         return "null";
     }
 
@@ -35,6 +34,7 @@ public class BloggerServicesImp implements BloggerServicesInt{
 
     @Override
     public BloggerModel getById(String id) {
+        BloggerModel bloggerModel=bloggerDao.findById(id).get();
         return bloggerDao.findById(id).get();
     }
 

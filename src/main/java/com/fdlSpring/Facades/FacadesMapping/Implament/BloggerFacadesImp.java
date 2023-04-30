@@ -1,11 +1,7 @@
 package com.fdlSpring.Facades.FacadesMapping.Implament;
 
-import com.fdlSpring.Facades.AdminDTO.AdminRequest;
-import com.fdlSpring.Facades.AdminDTO.AdminResponse;
-import com.fdlSpring.Facades.BloggerDTO.BloggerRequest;
-import com.fdlSpring.Facades.BloggerDTO.BloggerResponse;
+import com.fdlSpring.Facades.BloggerDTO;
 import com.fdlSpring.Facades.FacadesMapping.Interface.BloggerFacadesInt;
-import com.fdlSpring.Model.AdminModel;
 import com.fdlSpring.Model.BloggerModel;
 import com.fdlSpring.Services.BloggerManager.BloggerServicesImp;
 import jakarta.annotation.Resource;
@@ -21,13 +17,13 @@ public class BloggerFacadesImp implements BloggerFacadesInt {
     private BloggerServicesImp bloggerServicesImp;
 
     @Override
-    public String createBlogger(AdminRequest request) {
+    public String createBlogger(BloggerDTO request) {
         BloggerModel bloggerModel=mapper.map(request,BloggerModel.class);
         return bloggerServicesImp.createBlogger(bloggerModel);
     }
 
     @Override
-    public String updateBlogger(BloggerRequest request, String id) {
+    public String updateBlogger(BloggerDTO request, String id) {
           return bloggerServicesImp.updateBlogger(mapper.map(request,BloggerModel.class),id);
     }
 
@@ -37,16 +33,16 @@ public class BloggerFacadesImp implements BloggerFacadesInt {
     }
 
     @Override
-    public BloggerResponse getById(String id) {
-        return  mapper.map(bloggerServicesImp.getById(id),BloggerResponse.class);
+    public BloggerDTO getById(String id) {
+        return  mapper.map(bloggerServicesImp.getById(id), BloggerDTO.class);
     }
 
     @Override
-    public List<BloggerResponse> getAllBlogger() {
-        List<BloggerResponse> responses=new ArrayList<>();
+    public List<BloggerDTO> getAllBlogger() {
+        List<BloggerDTO> responses=new ArrayList<>();
         List<BloggerModel> models=bloggerServicesImp.getAllBlogger();
         for (BloggerModel model : models) {
-            responses.add(mapper.map(model,BloggerResponse.class));
+            responses.add(mapper.map(model, BloggerDTO.class));
         }
         return responses;
     }

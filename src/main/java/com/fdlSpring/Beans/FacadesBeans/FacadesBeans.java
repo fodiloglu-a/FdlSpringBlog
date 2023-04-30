@@ -24,6 +24,14 @@ public class FacadesBeans {
 
     @Bean
     public ReaderFacadesImp readerFacadesImp(){return new ReaderFacadesImp();}
+    @Bean
+    public FileFacadesImp fileFacadesImp(){
+        return new FileFacadesImp();
+    }
+    @Bean
+    public LogoFacadesImp logoFacadesImp(){
+        return new LogoFacadesImp();
+    }
 
 
 }
