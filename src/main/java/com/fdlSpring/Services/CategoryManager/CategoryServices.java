@@ -14,4 +14,6 @@ public interface CategoryServices {
     String createCategory(CategoryModel map);
 
     String update(CategoryModel categoryModel);
+
+    String delete(String id);
 }

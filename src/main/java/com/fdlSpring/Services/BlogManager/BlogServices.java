@@ -1,6 +1,6 @@
 package com.fdlSpring.Services.BlogManager;
 
-import com.fdlSpring.Facades.BlogDto.BlogRequest;
+import com.fdlSpring.Facades.BlogDTO;
 import com.fdlSpring.Model.BlogModel;
 
 import java.util.List;
@@ -19,6 +19,6 @@ public interface BlogServices {
 
     List<BlogModel> getBlogsByBloggerId(String id);
 
-    String updateBlog(BlogModel blogeId);
+    String updateBlog(BlogDTO dto,String id);
     String deleteBlogById(String id);
 }

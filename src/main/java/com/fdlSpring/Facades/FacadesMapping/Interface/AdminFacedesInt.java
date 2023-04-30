@@ -1,22 +1,19 @@
 package com.fdlSpring.Facades.FacadesMapping.Interface;
 
-import com.fdlSpring.Facades.AdminDTO.AdminRequest;
-import com.fdlSpring.Facades.AdminDTO.AdminResponse;
-import com.fdlSpring.Facades.BlogDto.BlogRequest;
-import com.fdlSpring.Facades.BlogDto.BlogResponse;
+import com.fdlSpring.Facades.AdminDTO;
 
 import java.util.List;
 
 public interface AdminFacedesInt {
 
 
-    String createAdmin(AdminRequest request);
+    String createAdmin(AdminDTO request);
 
-    String updateAdmin(AdminRequest request, String id);
+    String updateAdmin(AdminDTO request, String id);
 
     String deleteAdminById(String id);
 
-    AdminResponse getById(String id);
+    AdminDTO getById(String id);
 
-    List<AdminResponse> getAllAdmin();
+    List<AdminDTO> getAllAdmin();
 }

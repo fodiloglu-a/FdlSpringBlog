@@ -1,6 +1,5 @@
 package com.fdlSpring.Services.ReaderManager;
 
-import com.fdlSpring.Facades.ReaderDTO.ReaderRequest;
 import com.fdlSpring.Model.ReaderModel;
 
 import java.util.List;

@@ -1,23 +1,22 @@
 package com.fdlSpring.Facades.FacadesMapping.Interface;
 
-import com.fdlSpring.Facades.BlogDto.BlogRequest;
-import com.fdlSpring.Facades.BlogDto.BlogResponse;
+import com.fdlSpring.Facades.BlogDTO;
 
 import java.util.List;
 
 public interface BlogsFacadesInt {
 
-    String createBlog(BlogRequest blogRequest);
+    String createBlog(BlogDTO blogDTO);
 
-    BlogResponse getBlogById(String id);
+    BlogDTO getBlogById(String id);
 
-    BlogResponse getBlogByTitle(String title);
+    BlogDTO getBlogByTitle(String title);
 
-    List<BlogResponse> getBlogs();
+    List<BlogDTO> getBlogs();
 
-    List<BlogResponse> getBlogsByCategory(String category);
+    List<BlogDTO> getBlogsByCategory(String category);
 
-    List<BlogResponse> getBlogsByBloggerId(String id);
+    List<BlogDTO> getBlogsByBloggerId(String id);
 
-    String updateBlog(BlogRequest blogeId);
+    String updateBlog(BlogDTO blogeId,String id);
 }

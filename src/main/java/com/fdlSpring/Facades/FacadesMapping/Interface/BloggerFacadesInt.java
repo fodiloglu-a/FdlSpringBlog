@@ -1,22 +1,18 @@
 package com.fdlSpring.Facades.FacadesMapping.Interface;
 
-import com.fdlSpring.Facades.AdminDTO.AdminRequest;
-import com.fdlSpring.Facades.BlogDto.BlogRequest;
-import com.fdlSpring.Facades.BlogDto.BlogResponse;
-import com.fdlSpring.Facades.BloggerDTO.BloggerRequest;
-import com.fdlSpring.Facades.BloggerDTO.BloggerResponse;
+import com.fdlSpring.Facades.BloggerDTO;
 
 import java.util.List;
 
 public interface BloggerFacadesInt {
 
-    String createBlogger(AdminRequest request);
+    String createBlogger(BloggerDTO request);
 
-    String updateBlogger(BloggerRequest request, String id);
+    String updateBlogger(BloggerDTO request, String id);
 
     String deleteBloggerById(String id);
 
-    BloggerResponse getById(String id);
+    BloggerDTO getById(String id);
 
-    List<BloggerResponse> getAllBlogger();
+    List<BloggerDTO> getAllBlogger();
 }

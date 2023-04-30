@@ -29,6 +29,16 @@ public class CategoryServicesImp implements CategoryServices{
     }
 
     @Override
+    public String delete(String id) {
+        try {
+            categoryDao.deleteById(id);
+        }catch (Exception e){
+            return new RuntimeException().getMessage();
+        }
+        return "null";
+    }
+
+    @Override
     public String createCategory(CategoryModel map) {
           this.categoryDao.save(map);return "Successful";
     }
