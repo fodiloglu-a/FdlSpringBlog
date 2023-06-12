@@ -7,11 +7,18 @@
           <deploymentDescriptor name="sun-web.xml" url="file://$MODULE_DIR$/src/main/WEB-INF/sun-web.xml" />
           <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp" />
         </descriptors>
+<<<<<<< HEAD
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
+        </webroots>
+        <sourceRoots />
+=======
         <webroots />
         <sourceRoots>
           <root url="file://$MODULE_DIR$/src/main/java" />
           <root url="file://$MODULE_DIR$/src/main/resources" />
         </sourceRoots>
+>>>>>>> 7ba00473bb65d6454f53a94a31184822a6c455b8
       </configuration>
     </facet>
     <facet type="jpa" name="JPA">
@@ -65,7 +72,6 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.14.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-tomcat:3.0.6" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:10.1.8" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:10.1.8" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:6.0.8" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:6.0.8" level="project" />
@@ -75,7 +81,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:6.0.8" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:6.0.8" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:6.0.8" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.springframework.boot:spring-boot-devtools:3.0.6" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-devtools:3.0.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:3.0.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:3.0.6" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.26" level="project" />
@@ -118,5 +124,10 @@
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-mongodb:4.0.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:6.0.8" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:3.0.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.tomcat.embed:tomcat-embed-jasper:10.1.8" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:10.1.8" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-annotations-api:10.1.8" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.eclipse.jdt:ecj:3.33.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
   </component>
 </module>

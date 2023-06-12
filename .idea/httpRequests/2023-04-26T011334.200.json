@@ -1,0 +1,11 @@
+{
+  "args": {},
+  "headers": {
+    "Accept-Encoding": "gzip,deflate",
+    "Host": "httpbin.org",
+    "User-Agent": "Apache-HttpClient/4.5.13 (Java/17.0.5)",
+    "X-Amzn-Trace-Id": "Root=1-6448508e-30abd0f6342f9b9516baaf35"
+  },
+  "origin": "176.220.214.36",
+  "url": "https://httpbin.org/get"
+}

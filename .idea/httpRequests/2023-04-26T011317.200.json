@@ -1,0 +1,21 @@
+{
+  "data": {
+    "getUser": {
+      "name": "My Favorite User",
+      "comments": [
+        {
+          "text": "Hello, I'm My Favorite User!",
+          "by": "My Favorite User"
+        },
+        {
+          "text": "My name is My Favorite User!",
+          "by": "My Favorite User"
+        },
+        {
+          "text": "My Favorite User is cool name!",
+          "by": "My Favorite User"
+        }
+      ]
+    }
+  }
+}

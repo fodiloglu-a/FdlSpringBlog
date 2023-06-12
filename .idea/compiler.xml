@@ -7,16 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="fdlSpringBlog" />
         <module name="FdlSpringBlog" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="fdlSpringBlog" target="17" />
       <module name="FdlSpringBlog" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="FdlSpringBlog" options="-parameters" />
+      <module name="fdlSpringBlog" options="-parameters" />
     </option>
   </component>
 </project>

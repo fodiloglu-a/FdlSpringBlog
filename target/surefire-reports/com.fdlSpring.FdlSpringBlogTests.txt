@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.fdlSpring.FdlSpringBlogTests
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
+<<<<<<< HEAD
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.126 s - in com.fdlSpring.FdlSpringBlogTests
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.902 s - in com.fdlSpring.FdlSpringBlogTests
+>>>>>>> 7ba00473bb65d6454f53a94a31184822a6c455b8
+=======
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.166 s - in com.fdlSpring.FdlSpringBlogTests
+>>>>>>> 6aab08eda51f71e21208b7f97f51eea6c259458c
